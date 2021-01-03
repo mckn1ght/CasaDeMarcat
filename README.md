@@ -1,7 +1,7 @@
 # CasaDeMarcat
 
 RO  
- Aplicatie pentru casele de marcat v.80  
+ Aplicatie pentru casele de marcat V0.80  
 
 BUG-uri cunoscute  
  -La plata cu tichete se poate introduce o valoare mai mare decat cea ce trebuie platita(importanta medie)  
@@ -22,7 +22,7 @@ MODIFICARI
 --------------------------------------------------------------------------------------------------------------
 
 EN  
- Cashier app V 0.80  
+ Cashier app V0.80  
 KNOWN BUGS  
  -The current state of the app allows the user to pay more than they have to(ticket payment)  
 
