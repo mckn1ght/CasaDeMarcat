@@ -8,7 +8,7 @@ BUG-uri cunoscute
 
 MODIFICARI  
  -0.76 In loc de instantieri ale unei clase, acum programul preia produsele din baza de date  
- -0.76 Butoanele de plata cash si cel de " alta suma" acum functioneaza corespunzator 
+ -0.76 Butoanele de plata cash si cel de " alta suma" acum functioneaza corespunzator   
  -0.76 Am adaugat posibilitatea de a plati cu bonuri, card, cash, toate  pe acelasi bon  
 
  -0.80 Generare unui fisier pdf in care se afla bonul pentru printare  
