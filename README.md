@@ -35,5 +35,5 @@ CHANGES
  -0.80 The receipt is also saved in the database    
  -0.80 Implemented the "give change" functionality    
  -0.80 The "TOTAL" buton will now erase the table if there are only cancelled items and their total is 0    
- -0.80 Main table is now dinamically extended(At first there are only 47 line just to make sure it's visually pleasing)    
+ -0.80 Main table is now dinamically extended(At first there are only 47 lines just to make sure it's visually pleasing)    
 
