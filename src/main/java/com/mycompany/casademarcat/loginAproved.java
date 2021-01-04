@@ -37,7 +37,6 @@ import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 
-
 /**
  *
  * @author kodie
@@ -58,8 +57,7 @@ public class loginAproved extends javax.swing.JFrame {
     private static DecimalFormat df2 = new DecimalFormat("#.##");
     public String sumaDePeButon = null;
     public static LocalDateTime acumTimp = LocalDateTime.now();
-    
-    
+
 //UPGRADE LA SQL in 0.76
     //instantieri produse -discontinued in 0.76-
     //****************************************************************************
@@ -90,7 +88,6 @@ public class loginAproved extends javax.swing.JFrame {
         for (int i = 0; i < pozitiiStornate.length - 1; i++) {
             pozitiiStornate[i] = -1;
         }
-        
 
     }
 
@@ -182,6 +179,36 @@ public class loginAproved extends javax.swing.JFrame {
         jButton51 = new javax.swing.JButton();
         jButton52 = new javax.swing.JButton();
         jButton53 = new javax.swing.JButton();
+        bazar = new javax.swing.JPanel();
+        Icon pungaHartie = new ImageIcon("src\\main\\java\\ImaginiBazar\\pungaHartie.jpg");
+        jButton102 = new javax.swing.JButton(numeProdus + " - " + pretProdus, pungaHartie);
+        Icon sacosaTextil = new ImageIcon("src\\main\\java\\ImaginiBazar\\sacosaTextil.jpg");
+        jButton103 = new javax.swing.JButton(numeProdus + " - " + pretProdus, sacosaTextil);
+        Icon pungaTermica = new ImageIcon("src\\main\\java\\ImaginiBazar\\pungaTermica.jpg");
+        jButton104 = new javax.swing.JButton(numeProdus + " - " + pretProdus, pungaTermica);
+        Icon tacamuriPlastic = new ImageIcon("src\\main\\java\\ImaginiBazar\\tacamuriPlastic.jpg");
+        jButton105 = new javax.swing.JButton(numeProdus + " - " + pretProdus, tacamuriPlastic);
+        Icon caserola250g = new ImageIcon("src\\main\\java\\ImaginiBazar\\caserola250g.jpg");
+        jButton106 = new javax.swing.JButton(numeProdus + " - " + pretProdus, caserola250g);
+        jButton107 = new javax.swing.JButton();
+        jButton108 = new javax.swing.JButton();
+        jButton109 = new javax.swing.JButton();
+        jButton110 = new javax.swing.JButton();
+        jButton111 = new javax.swing.JButton();
+        jButton112 = new javax.swing.JButton();
+        jButton113 = new javax.swing.JButton();
+        jButton114 = new javax.swing.JButton();
+        jButton115 = new javax.swing.JButton();
+        jButton116 = new javax.swing.JButton();
+        jButton117 = new javax.swing.JButton();
+        jButton118 = new javax.swing.JButton();
+        jButton119 = new javax.swing.JButton();
+        jButton120 = new javax.swing.JButton();
+        jButton121 = new javax.swing.JButton();
+        jButton122 = new javax.swing.JButton();
+        jButton123 = new javax.swing.JButton();
+        jButton124 = new javax.swing.JButton();
+        jButton125 = new javax.swing.JButton();
         optionsWindow = new javax.swing.JLayeredPane();
         optiuniPrincipal = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -192,6 +219,19 @@ public class loginAproved extends javax.swing.JFrame {
         jButton59 = new javax.swing.JButton();
         optiuniSubMeniu = new javax.swing.JPanel();
         jButton25 = new javax.swing.JButton();
+        jButton77 = new javax.swing.JButton();
+        jButton78 = new javax.swing.JButton();
+        jButton79 = new javax.swing.JButton();
+        jButton80 = new javax.swing.JButton();
+        jButton81 = new javax.swing.JButton();
+        jButton82 = new javax.swing.JButton();
+        jButton83 = new javax.swing.JButton();
+        jButton84 = new javax.swing.JButton();
+        jButton85 = new javax.swing.JButton();
+        jButton86 = new javax.swing.JButton();
+        jButton87 = new javax.swing.JButton();
+        jButton88 = new javax.swing.JButton();
+        jButton89 = new javax.swing.JButton();
         supervizor = new javax.swing.JPanel();
         jButton55 = new javax.swing.JButton();
         jButton56 = new javax.swing.JButton();
@@ -241,13 +281,8 @@ public class loginAproved extends javax.swing.JFrame {
         jLabel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Total Lei", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 36))); // NOI18N
 
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel2.setText("Cantitate/ Cod Produs");
 
         javax.swing.GroupLayout totalPanelLayout = new javax.swing.GroupLayout(totalPanel);
@@ -258,7 +293,9 @@ public class loginAproved extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(totalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, totalPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -267,20 +304,21 @@ public class loginAproved extends javax.swing.JFrame {
             totalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(totalPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(totalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
-                    .addGroup(totalPanelLayout.createSequentialGroup()
+                .addGroup(totalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, totalPanelLayout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
+        mainWindow.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         mainWindow.setLayout(new java.awt.CardLayout());
 
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
+        jTable1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -356,11 +394,11 @@ public class loginAproved extends javax.swing.JFrame {
         TabelPrincipal.setLayout(TabelPrincipalLayout);
         TabelPrincipalLayout.setHorizontalGroup(
             TabelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 575, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE)
         );
         TabelPrincipalLayout.setVerticalGroup(
             TabelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 789, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 799, Short.MAX_VALUE)
         );
 
         mainWindow.add(TabelPrincipal, "card2");
@@ -373,7 +411,6 @@ public class loginAproved extends javax.swing.JFrame {
         jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton5.setInheritsPopupMenu(true);
-        jButton5.setMargin(new java.awt.Insets(2, 2, 18, 18));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -1019,6 +1056,218 @@ public class loginAproved extends javax.swing.JFrame {
 
         mainWindow.add(bauturi, "card4");
 
+        bazar.setLayout(new java.awt.GridLayout(6, 6, 10, 10));
+
+        jButton102.setVerticalTextPosition(SwingConstants.TOP);
+        jButton102.setHorizontalTextPosition(SwingConstants.LEFT);
+        jButton102.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jButton102.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton102.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton102.setInheritsPopupMenu(true);
+        jButton102.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton102ActionPerformed(evt);
+            }
+        });
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+            Statement st =  conn.createStatement();
+            ResultSet rs = st.executeQuery("select NUME from PRODUSE where cod  = 12533");
+            if(rs.next())
+
+            numeProdus = rs.getString(1);
+
+            rs = st.executeQuery("select Pret from PRODUSE where cod  = 12533");
+            if(rs.next())
+            pretProdus = rs.getString(1);
+            jButton102.setText(numeProdus + " - " + pretProdus);
+            jButton102.setToolTipText(numeProdus + " - " + pretProdus);
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        bazar.add(jButton102);
+
+        jButton103.setVerticalTextPosition(SwingConstants.TOP);
+        jButton103.setHorizontalTextPosition(SwingConstants.LEFT);
+        jButton103.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jButton103.setToolTipText("");
+        jButton103.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton103.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton103.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton103.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton103ActionPerformed(evt);
+            }
+        });
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+            Statement st =  conn.createStatement();
+            ResultSet rs = st.executeQuery("select NUME from PRODUSE where cod  = 12534");
+            if(rs.next())
+
+            numeProdus = rs.getString(1);
+
+            rs = st.executeQuery("select Pret from PRODUSE where cod  = 12534");
+            if(rs.next())
+            pretProdus = rs.getString(1);
+            jButton103.setText(numeProdus + " - " + pretProdus);
+            jButton103.setToolTipText(numeProdus + " - " + pretProdus);
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        bazar.add(jButton103);
+
+        jButton104.setVerticalTextPosition(SwingConstants.TOP);
+        jButton104.setHorizontalTextPosition(SwingConstants.LEFT);
+        jButton104.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jButton104.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton104.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton104.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton104ActionPerformed(evt);
+            }
+        });
+        bazar.add(jButton104);
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+            Statement st =  conn.createStatement();
+            ResultSet rs = st.executeQuery("select NUME from PRODUSE where cod  = 12535");
+
+            if(rs.next())
+            numeProdus = rs.getString(1);
+
+            rs = st.executeQuery("select Pret from PRODUSE where cod  = 12535");
+            if(rs.next())
+            pretProdus = rs.getString(1);
+            jButton104.setText(numeProdus + " - " + pretProdus);
+            jButton104.setToolTipText(numeProdus + " - " + pretProdus);
+
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        jButton105.setVerticalTextPosition(SwingConstants.TOP);
+        jButton105.setHorizontalTextPosition(SwingConstants.LEFT);
+        jButton105.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jButton105.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton105.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton105.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton105ActionPerformed(evt);
+            }
+        });
+        bazar.add(jButton105);
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+            Statement st =  conn.createStatement();
+            ResultSet rs = st.executeQuery("select NUME from PRODUSE where cod  = 12536");
+
+            if(rs.next())
+            numeProdus = rs.getString(1);
+
+            rs = st.executeQuery("select Pret from PRODUSE where cod  = 12536");
+            if(rs.next())
+            pretProdus = rs.getString(1);
+            jButton105.setText(numeProdus + " - " + pretProdus);
+            jButton105.setToolTipText(numeProdus + " - " + pretProdus);
+
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        jButton106.setVerticalTextPosition(SwingConstants.TOP);
+        jButton106.setHorizontalTextPosition(SwingConstants.LEFT);
+        jButton106.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jButton106.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton106.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton106.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton106ActionPerformed(evt);
+            }
+        });
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+            Statement st =  conn.createStatement();
+            ResultSet rs = st.executeQuery("select NUME from PRODUSE where cod  = 12537");
+
+            if(rs.next())
+            numeProdus = rs.getString(1);
+
+            rs = st.executeQuery("select Pret from PRODUSE where cod  = 12537");
+            if(rs.next())
+            pretProdus = rs.getString(1);
+            jButton106.setText(numeProdus + " - " + pretProdus);
+            jButton106.setToolTipText(numeProdus + " - " + pretProdus);
+
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        bazar.add(jButton106);
+
+        jButton107.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton107);
+
+        jButton108.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton108);
+
+        jButton109.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton109);
+
+        jButton110.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton110);
+
+        jButton111.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton111);
+
+        jButton112.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton112);
+
+        jButton113.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton113.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton113ActionPerformed(evt);
+            }
+        });
+        bazar.add(jButton113);
+
+        jButton114.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton114);
+
+        jButton115.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton115);
+
+        jButton116.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton116);
+
+        jButton117.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton117);
+
+        jButton118.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton118);
+
+        jButton119.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton119);
+
+        jButton120.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton120);
+
+        jButton121.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton121);
+
+        jButton122.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton122);
+
+        jButton123.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton123);
+
+        jButton124.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton124);
+
+        jButton125.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bazar.add(jButton125);
+
+        mainWindow.add(bazar, "card3");
+
         optionsWindow.setLayout(new java.awt.CardLayout());
 
         optiuniPrincipal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1039,7 +1288,7 @@ public class loginAproved extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("jButton3");
+        jButton3.setText("Bazar");
         jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1070,7 +1319,7 @@ public class loginAproved extends javax.swing.JFrame {
         optiuniPrincipalLayout.setHorizontalGroup(
             optiuniPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(optiuniPrincipalLayout.createSequentialGroup()
-                .addContainerGap(24, Short.MAX_VALUE)
+                .addGap(27, 27, 27)
                 .addGroup(optiuniPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, optiuniPrincipalLayout.createSequentialGroup()
                         .addGroup(optiuniPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1084,7 +1333,7 @@ public class loginAproved extends javax.swing.JFrame {
                                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18))
+                        .addGap(27, 27, 27))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, optiuniPrincipalLayout.createSequentialGroup()
                         .addComponent(jButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(66, 66, 66))))
@@ -1102,7 +1351,7 @@ public class loginAproved extends javax.swing.JFrame {
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jButton59, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 440, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 454, Short.MAX_VALUE)
                 .addComponent(jButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -1127,17 +1376,68 @@ public class loginAproved extends javax.swing.JFrame {
         optiuniSubMeniuLayout.setHorizontalGroup(
             optiuniSubMeniuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(optiuniSubMeniuLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(142, Short.MAX_VALUE))
+                .addGap(23, 23, 23)
+                .addGroup(optiuniSubMeniuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(optiuniSubMeniuLayout.createSequentialGroup()
+                        .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton77))
+                    .addGroup(optiuniSubMeniuLayout.createSequentialGroup()
+                        .addGroup(optiuniSubMeniuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton78)
+                            .addComponent(jButton80)
+                            .addComponent(jButton82)
+                            .addComponent(jButton84)
+                            .addComponent(jButton86)
+                            .addComponent(jButton88))
+                        .addGap(18, 18, 18)
+                        .addGroup(optiuniSubMeniuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton89)
+                            .addComponent(jButton87)
+                            .addComponent(jButton85)
+                            .addComponent(jButton83)
+                            .addComponent(jButton81)
+                            .addComponent(jButton79))))
+                .addGap(23, 23, 23))
         );
+
+        optiuniSubMeniuLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton25, jButton77, jButton78, jButton79, jButton80, jButton81, jButton82, jButton83, jButton84, jButton85, jButton86, jButton87, jButton88, jButton89});
+
         optiuniSubMeniuLayout.setVerticalGroup(
             optiuniSubMeniuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(optiuniSubMeniuLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(691, Short.MAX_VALUE))
+                .addGroup(optiuniSubMeniuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton77)
+                    .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(optiuniSubMeniuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton78)
+                    .addComponent(jButton79))
+                .addGap(18, 18, 18)
+                .addGroup(optiuniSubMeniuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton80)
+                    .addComponent(jButton81))
+                .addGap(18, 18, 18)
+                .addGroup(optiuniSubMeniuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton82)
+                    .addComponent(jButton83))
+                .addGap(18, 18, 18)
+                .addGroup(optiuniSubMeniuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton84)
+                    .addComponent(jButton85))
+                .addGap(18, 18, 18)
+                .addGroup(optiuniSubMeniuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton86)
+                    .addComponent(jButton87))
+                .addGap(18, 18, 18)
+                .addGroup(optiuniSubMeniuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton88)
+                    .addComponent(jButton89))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        optiuniSubMeniuLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton25, jButton77, jButton78, jButton79, jButton80, jButton81, jButton82, jButton83, jButton84, jButton85, jButton86, jButton87, jButton88, jButton89});
 
         optionsWindow.add(optiuniSubMeniu, "card3");
 
@@ -1183,7 +1483,7 @@ public class loginAproved extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(supervizorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton57, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton56, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)
+                    .addComponent(jButton56, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
                     .addComponent(jButton55, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton58, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -1199,7 +1499,7 @@ public class loginAproved extends javax.swing.JFrame {
                 .addComponent(jButton55, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38)
                 .addComponent(jButton58, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(442, Short.MAX_VALUE))
+                .addContainerGap(456, Short.MAX_VALUE))
         );
 
         optionsWindow.add(supervizor, "card4");
@@ -1243,7 +1543,7 @@ public class loginAproved extends javax.swing.JFrame {
         plataLayout.setHorizontalGroup(
             plataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(plataLayout.createSequentialGroup()
-                .addContainerGap(24, Short.MAX_VALUE)
+                .addGap(26, 26, 26)
                 .addGroup(plataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, plataLayout.createSequentialGroup()
                         .addComponent(jButton62, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1253,7 +1553,7 @@ public class loginAproved extends javax.swing.JFrame {
                         .addComponent(jButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton61, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18))
+                .addGap(26, 26, 26))
         );
         plataLayout.setVerticalGroup(
             plataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1266,7 +1566,7 @@ public class loginAproved extends javax.swing.JFrame {
                 .addGroup(plataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton62, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton63, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(588, Short.MAX_VALUE))
+                .addContainerGap(602, Short.MAX_VALUE))
         );
 
         optionsWindow.add(plata, "card5");
@@ -1301,7 +1601,7 @@ public class loginAproved extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, plataCardLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(jButton90, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addGroup(plataCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton92, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton91))
@@ -1319,7 +1619,7 @@ public class loginAproved extends javax.swing.JFrame {
                     .addComponent(jButton91))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton92, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(595, Short.MAX_VALUE))
+                .addContainerGap(609, Short.MAX_VALUE))
         );
 
         plataCardLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton90, jButton91});
@@ -1388,19 +1688,19 @@ public class loginAproved extends javax.swing.JFrame {
         plataCashLayout.setHorizontalGroup(
             plataCashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, plataCashLayout.createSequentialGroup()
-                .addContainerGap(23, Short.MAX_VALUE)
+                .addGap(23, 23, 23)
                 .addGroup(plataCashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton99, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton97, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton93, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton95, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addGroup(plataCashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton101, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton96, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton94, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton98, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton100, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton100, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton94, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23))
         );
         plataCashLayout.setVerticalGroup(
@@ -1410,20 +1710,20 @@ public class loginAproved extends javax.swing.JFrame {
                 .addGroup(plataCashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton93, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
                     .addComponent(jButton94, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
                 .addGroup(plataCashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton95, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton96, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE))
+                    .addComponent(jButton96, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(plataCashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton97, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
-                    .addComponent(jButton98, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE))
+                    .addComponent(jButton97, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)
+                    .addComponent(jButton98, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(plataCashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton99, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
-                    .addComponent(jButton100, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE))
+                    .addComponent(jButton99, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)
+                    .addComponent(jButton100, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton101, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
+                .addComponent(jButton101, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE)
                 .addGap(315, 315, 315))
         );
 
@@ -1649,7 +1949,8 @@ public class loginAproved extends javax.swing.JFrame {
         patiserie.setVisible(false);
         bauturi.setVisible(false);
         optiuniSubMeniu.setVisible(false);
-
+        bazar.setVisible(false);
+        
         TabelPrincipal.setVisible(true);
         optiuniPrincipal.setVisible(true);
     }//GEN-LAST:event_jButton25ActionPerformed
@@ -1768,7 +2069,7 @@ public class loginAproved extends javax.swing.JFrame {
     private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
         //STORNARE
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        
+
         try {
             int SelectedRowIndex = jTable1.getSelectedRow();
             boolean flag = false;
@@ -1777,14 +2078,12 @@ public class loginAproved extends javax.swing.JFrame {
                     flag = true;
                 }
             }
-           
-                
-            
+
             if (flag == false) {
                 pozitiiStornate[aux] = SelectedRowIndex;
                 pozitiiStornate[aux + 1] = SelectedRowIndex + 1;
                 aux += 2;
-                
+
                 String nume = (String) model.getValueAt(SelectedRowIndex, 0);
                 double pret = (Double) model.getValueAt(SelectedRowIndex, 1);
                 int nrBuc = (Integer) model.getValueAt(SelectedRowIndex, 2);
@@ -1817,8 +2116,8 @@ public class loginAproved extends javax.swing.JFrame {
         if (Double.parseDouble(jLabel1.getText()) > 0) {
             optiuniPrincipal.setVisible(false);
             plata.setVisible(true);
-        }else if( Double.parseDouble(jLabel1.getText()) == 0 ){
-        bonNou();
+        } else if (Double.parseDouble(jLabel1.getText()) == 0) {
+            bonNou();
         }
     }//GEN-LAST:event_jButton59ActionPerformed
 
@@ -1830,10 +2129,6 @@ public class loginAproved extends javax.swing.JFrame {
     private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
         jTextField1.setText(jTextField1.getText() + "1");
     }//GEN-LAST:event_jButton70ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
         jTextField1.setText(jTextField1.getText() + "7");
@@ -1882,20 +2177,21 @@ public class loginAproved extends javax.swing.JFrame {
 
     private void jButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton76ActionPerformed
         // ENTER
-        if(!jTextField1.getText().equals("")){
-            try {    
-            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
-            Statement st =  conn.createStatement();
-            ResultSet rs = st.executeQuery("select COD from PRODUSE where cod  = " + Integer.parseInt(jTextField1.getText()));    
-            jTextField1.setText("");
-               if(rs.next())
-               adaugaProdusInTabel(rs.getInt(1));
-               else {JOptionPane.showMessageDialog(null,"Codul de produs este incorect!", "Error", JOptionPane.ERROR_MESSAGE);
-               }
+        if (!jTextField1.getText().equals("")) {
+            try {
+                Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+                Statement st = conn.createStatement();
+                ResultSet rs = st.executeQuery("select COD from PRODUSE where cod  = " + Integer.parseInt(jTextField1.getText()));
+                jTextField1.setText("");
+                if (rs.next()) {
+                    adaugaProdusInTabel(rs.getInt(1));
+                } else {
+                    JOptionPane.showMessageDialog(null, "Codul de produs este incorect!", "Error", JOptionPane.ERROR_MESSAGE);
+                }
 
-    } catch (SQLException ex) {
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);    
-          }
+            } catch (SQLException ex) {
+                Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         //Cauta codul introdus in SQL si adauga produsul in tabel.
     }//GEN-LAST:event_jButton76ActionPerformed
@@ -1918,102 +2214,102 @@ public class loginAproved extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton92ActionPerformed
 
     private void jButton95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton95ActionPerformed
-      if(!String.valueOf(jButton95.getText()).equals(null)){
-        double aux = 0;
-        sumaDePeButon = String.valueOf(jButton95.getText());
-        sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
-        aux = Double.parseDouble(sumaDePeButon);
-        aux = aux * -1;
-        actualizeazaTotalCash(aux);
-        calculeazaTotal();
-        plataCash.setVisible(false);
-        plata.setVisible(false);
-        optiuniPrincipal.setVisible(true);
+        if (!String.valueOf(jButton95.getText()).equals(null)) {
+            double aux = 0;
+            sumaDePeButon = String.valueOf(jButton95.getText());
+            sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
+            aux = Double.parseDouble(sumaDePeButon);
+            aux = aux * -1;
+            actualizeazaTotalCash(aux);
+            calculeazaTotal();
+            plataCash.setVisible(false);
+            plata.setVisible(false);
+            optiuniPrincipal.setVisible(true);
         }
     }//GEN-LAST:event_jButton95ActionPerformed
 
     private void jButton93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton93ActionPerformed
-        if(!String.valueOf(jButton93.getText()).equals(null)){
-        double aux = 0;
-        sumaDePeButon = String.valueOf(jButton93.getText());
-        sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
-        aux = Double.parseDouble(sumaDePeButon);
-        aux = aux * -1;
-        actualizeazaTotalCash(aux);
-        calculeazaTotal();
-       
-        plataCash.setVisible(false);
-        plata.setVisible(false);
-        optiuniPrincipal.setVisible(true);
-        plataCash.setVisible(false);
-        plata.setVisible(false);
-        optiuniPrincipal.setVisible(true);
+        if (!String.valueOf(jButton93.getText()).equals(null)) {
+            double aux = 0;
+            sumaDePeButon = String.valueOf(jButton93.getText());
+            sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
+            aux = Double.parseDouble(sumaDePeButon);
+            aux = aux * -1;
+            actualizeazaTotalCash(aux);
+            calculeazaTotal();
+
+            plataCash.setVisible(false);
+            plata.setVisible(false);
+            optiuniPrincipal.setVisible(true);
+            plataCash.setVisible(false);
+            plata.setVisible(false);
+            optiuniPrincipal.setVisible(true);
         }
     }//GEN-LAST:event_jButton93ActionPerformed
 
     private void jButton96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton96ActionPerformed
-      if(!String.valueOf(jButton96.getText()).equals(null)){
-        double aux = 0;
-        sumaDePeButon = String.valueOf(jButton96.getText());
-        sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
-        aux = Double.parseDouble(sumaDePeButon);
-        aux = aux * -1;
-        actualizeazaTotalCash(aux);
-        calculeazaTotal();
-        plataCash.setVisible(false);
-        plata.setVisible(false);
-        optiuniPrincipal.setVisible(true);
+        if (!String.valueOf(jButton96.getText()).equals(null)) {
+            double aux = 0;
+            sumaDePeButon = String.valueOf(jButton96.getText());
+            sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
+            aux = Double.parseDouble(sumaDePeButon);
+            aux = aux * -1;
+            actualizeazaTotalCash(aux);
+            calculeazaTotal();
+            plataCash.setVisible(false);
+            plata.setVisible(false);
+            optiuniPrincipal.setVisible(true);
         }
     }//GEN-LAST:event_jButton96ActionPerformed
 
     private void jButton97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton97ActionPerformed
-    if(!String.valueOf(jButton97.getText()).equals(null)){
-        double aux = 0;
-        sumaDePeButon = String.valueOf(jButton97.getText());
-        sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
-        aux = Double.parseDouble(sumaDePeButon);
-        aux = aux * -1;
-        actualizeazaTotalCash(aux);
-        calculeazaTotal();
-        plataCash.setVisible(false);
-        plata.setVisible(false);
-        optiuniPrincipal.setVisible(true);
+        if (!String.valueOf(jButton97.getText()).equals(null)) {
+            double aux = 0;
+            sumaDePeButon = String.valueOf(jButton97.getText());
+            sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
+            aux = Double.parseDouble(sumaDePeButon);
+            aux = aux * -1;
+            actualizeazaTotalCash(aux);
+            calculeazaTotal();
+            plataCash.setVisible(false);
+            plata.setVisible(false);
+            optiuniPrincipal.setVisible(true);
         }
     }//GEN-LAST:event_jButton97ActionPerformed
 
     private void jButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton98ActionPerformed
-   if(!String.valueOf(jButton98.getText()).equals(null)){
-        double aux = 0;
-        sumaDePeButon = String.valueOf(jButton98.getText());
-        sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
-        aux = Double.parseDouble(sumaDePeButon);
-        aux = aux * -1;
-        actualizeazaTotalCash(aux);
-        calculeazaTotal();
-        plataCash.setVisible(false);
-        plata.setVisible(false);
-        optiuniPrincipal.setVisible(true);
+        if (!String.valueOf(jButton98.getText()).equals(null)) {
+            double aux = 0;
+            sumaDePeButon = String.valueOf(jButton98.getText());
+            sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
+            aux = Double.parseDouble(sumaDePeButon);
+            aux = aux * -1;
+            actualizeazaTotalCash(aux);
+            calculeazaTotal();
+            plataCash.setVisible(false);
+            plata.setVisible(false);
+            optiuniPrincipal.setVisible(true);
         }
     }//GEN-LAST:event_jButton98ActionPerformed
 
     private void jButton99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton99ActionPerformed
-    if(!String.valueOf(jButton99.getText()).equals(null)){
-        double aux = 0;
-        sumaDePeButon = String.valueOf(jButton99.getText());
-        sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
-        aux = Double.parseDouble(sumaDePeButon);
-        aux = aux * -1;
-        actualizeazaTotalCash(aux);
-        calculeazaTotal();
-        plataCash.setVisible(false);
-        plata.setVisible(false);
-        optiuniPrincipal.setVisible(true);
+        if (!String.valueOf(jButton99.getText()).equals(null)) {
+            double aux = 0;
+            sumaDePeButon = String.valueOf(jButton99.getText());
+            sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
+            aux = Double.parseDouble(sumaDePeButon);
+            aux = aux * -1;
+            actualizeazaTotalCash(aux);
+            calculeazaTotal();
+            plataCash.setVisible(false);
+            plata.setVisible(false);
+            optiuniPrincipal.setVisible(true);
         }
     }//GEN-LAST:event_jButton99ActionPerformed
 
     private void jButton100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton100ActionPerformed
-    //ALTA SUMA
-    new altaSuma().setVisible(true);
+        //ALTA SUMA
+        new altaSuma().setVisible(true);
     }//GEN-LAST:event_jButton100ActionPerformed
 
     private void jButton101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton101ActionPerformed
@@ -2174,24 +2470,24 @@ public class loginAproved extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton62ActionPerformed
 
     private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
-    if(!String.valueOf(jButton94.getText()).equals(null)){
-        double aux = 0;
-        sumaDePeButon = String.valueOf(jButton94.getText());
-        sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
-        aux = Double.parseDouble(sumaDePeButon);
-        aux = aux * -1;
-        actualizeazaTotalCash(aux);
-        calculeazaTotal();
-        plataCash.setVisible(false);
-        plata.setVisible(false);
-        optiuniPrincipal.setVisible(true);
+        if (!String.valueOf(jButton94.getText()).equals(null)) {
+            double aux = 0;
+            sumaDePeButon = String.valueOf(jButton94.getText());
+            sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
+            aux = Double.parseDouble(sumaDePeButon);
+            aux = aux * -1;
+            actualizeazaTotalCash(aux);
+            calculeazaTotal();
+            plataCash.setVisible(false);
+            plata.setVisible(false);
+            optiuniPrincipal.setVisible(true);
         }
     }//GEN-LAST:event_jButton94ActionPerformed
 
     private void jButton90ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton90ActionPerformed
-       actualizeazaTotalCard();
-       inmanareRest();
-       
+        actualizeazaTotalCard();
+        inmanareRest();
+
         plataCash.setVisible(false);
         plata.setVisible(false);
         optiuniPrincipal.setVisible(true);
@@ -2202,22 +2498,49 @@ public class loginAproved extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton90ActionPerformed
 
     private void jButton91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton91ActionPerformed
-       actualizeazaTotalCard();
-       inmanareRest();
-       
+        actualizeazaTotalCard();
+        inmanareRest();
+
         plataCash.setVisible(false);
         plata.setVisible(false);
         optiuniPrincipal.setVisible(true);
         plataCash.setVisible(false);
         plataCard.setVisible(false);
-        
+
         plata.setVisible(false);
         optiuniPrincipal.setVisible(true);
     }//GEN-LAST:event_jButton91ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       
+        TabelPrincipal.setVisible(false);
+        bazar.setVisible(true);
+        optiuniPrincipal.setVisible(false);
+        optiuniSubMeniu.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton102ActionPerformed
+    adaugaProdusInTabel(12533);
+    }//GEN-LAST:event_jButton102ActionPerformed
+
+    private void jButton103ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton103ActionPerformed
+    adaugaProdusInTabel(12534);
+    }//GEN-LAST:event_jButton103ActionPerformed
+
+    private void jButton104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton104ActionPerformed
+    adaugaProdusInTabel(12535);
+    }//GEN-LAST:event_jButton104ActionPerformed
+
+    private void jButton105ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton105ActionPerformed
+    adaugaProdusInTabel(12536);
+    }//GEN-LAST:event_jButton105ActionPerformed
+
+    private void jButton106ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton106ActionPerformed
+    adaugaProdusInTabel(12537);
+    }//GEN-LAST:event_jButton106ActionPerformed
+
+    private void jButton113ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton113ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton113ActionPerformed
 
     //apasarea butonului de placa cu tichete
     public static void actualizeazaTotalTichete(double totalPlatitTichete, double valoare, int nr) {
@@ -2232,7 +2555,6 @@ public class loginAproved extends javax.swing.JFrame {
         metodeDePlataUtilizate++;
         contorTabelColoane = 0;
         contorTabelLinii++;
-        
 
     }
 
@@ -2248,11 +2570,10 @@ public class loginAproved extends javax.swing.JFrame {
         metodeDePlataUtilizate++;
         contorTabelColoane = 0;
         contorTabelLinii++;
-         
 
     }
-    
-    public static void actualizeazaTotalCard(){
+
+    public static void actualizeazaTotalCard() {
         sum = sum * -1;
         jTable1.getModel().setValueAt("***PLATA CARD***", contorTabelLinii, contorTabelColoane);
         contorTabelColoane++;
@@ -2269,164 +2590,158 @@ public class loginAproved extends javax.swing.JFrame {
     }
 
     public static void calculeazaTotal() {
-        
+
         sum = 0;
         for (int i = 0; i < contorTabelLinii; i++) {
             sum = sum + Double.parseDouble((jTable1.getModel().getValueAt(i, 3).toString()));
-            if (sum <  0) {      
+            if (sum < 0) {
                 rest = sum;
                 sum = 0;
                 inmanareRest();
-            
+
             }
-            
+
         }
-        jLabel1.setText( df2.format(sum));
+        jLabel1.setText(df2.format(sum));
         //ADAUGA LINIE NOUA IN TABEL
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.insertRow(jTable1.getRowCount(), new Object[]{});
- 
+
     }
-    
+
     public static void inmanareRest() {
-     
-          
+
         jTable1.getModel().setValueAt("***REST***", contorTabelLinii, contorTabelColoane);
         contorTabelColoane++;
         jTable1.getModel().setValueAt(0, contorTabelLinii, contorTabelColoane);
         contorTabelColoane++;
         jTable1.getModel().setValueAt(0, contorTabelLinii, contorTabelColoane);
         contorTabelColoane++;
-        jTable1.getModel().setValueAt((Object) (rest  * -1), contorTabelLinii, contorTabelColoane);
+        jTable1.getModel().setValueAt((Object) (rest * -1), contorTabelLinii, contorTabelColoane);
         contorTabelColoane = 0;
         contorTabelLinii++;
-         if(rest != 0) 
-             JOptionPane.showMessageDialog(null,  "REST:    " + df2.format(rest * -1),  "Inmanati restul!",   JOptionPane.WARNING_MESSAGE);
+        if (rest != 0) {
+            JOptionPane.showMessageDialog(null, "REST:    " + df2.format(rest * -1), "Inmanati restul!", JOptionPane.WARNING_MESSAGE);
+        }
 
         salvareBonSQL();
-        bonNou();   
-      
+        bonNou();
+
     }
+
     public static void bonNou() {
-     
-            try {
+
+        try {
             previewBon();
             //reinitializeaza toate datele pentru un nou bon
         } catch (IOException ex) {
             Logger.getLogger(loginAproved.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-  
-    aux = 0;
-    nrBon++;
-    rest = 0;
-    sum = 0;
-    metodeDePlataUtilizate = 0;
-    for (int i = 0; i < pozitiiStornate.length - 1; i++) 
+        aux = 0;
+        nrBon++;
+        rest = 0;
+        sum = 0;
+        metodeDePlataUtilizate = 0;
+        for (int i = 0; i < pozitiiStornate.length - 1; i++) {
             pozitiiStornate[i] = -1;
-    contorTabelLinii = 0;
-    contorTabelColoane = 0;
-    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-    model.setRowCount(0);
-    model.setRowCount(47);
+        }
+        contorTabelLinii = 0;
+        contorTabelColoane = 0;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.setRowCount(0);
+        model.setRowCount(47);
     }
-    
-    
-    public static void salvareBonSQL(){
+
+    public static void salvareBonSQL() {
         //Salvare bon in SQL.
-        
+
         Timestamp timestamp = Timestamp.valueOf(acumTimp);
         acumTimp = LocalDateTime.now();
-        
-        switch(metodeDePlataUtilizate){
+
+        switch (metodeDePlataUtilizate) {
             case 1:// pentru cand se foloseste doar o metoda de plata;
             
-                try{
-                    
-              
-        Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
-        String sql = "INSERT INTO bonuri(nrbon, numeprodus, pret, nrbuc, prettotal, metodadeplata1, casier, data ,rest) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        PreparedStatement pstmt = conn.prepareStatement(sql);
-        
-        for(int i = 0; i < contorTabelLinii - 2; i++){
-            pstmt.setInt(1, nrBon);
-            pstmt.setString(2, String.valueOf(jTable1.getValueAt(i, 0)));
-            pstmt.setDouble(3, Double.parseDouble(jTable1.getValueAt(i, 1).toString()));
-            pstmt.setInt(4, (Integer)jTable1.getValueAt(i, 2));
-            pstmt.setDouble(5, (Double)jTable1.getValueAt(i, 3));
-            pstmt.setString(6, (jTable1.getValueAt(contorTabelLinii - 2, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 2, 3)).toString());
-            pstmt.setString(7, login.loggedUser);
-            pstmt.setTimestamp(8, timestamp);
-            pstmt.setDouble(9, (rest * -1) );
-            pstmt.executeUpdate(); 
-            
-           
-    }
-        }catch (SQLException ex) {
-            
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);    
-          }
-                
-                break;
+                try {
+
+                Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+                String sql = "INSERT INTO bonuri(nrbon, numeprodus, pret, nrbuc, prettotal, metodadeplata1, casier, data ,rest) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                PreparedStatement pstmt = conn.prepareStatement(sql);
+
+                for (int i = 0; i < contorTabelLinii - 2; i++) {
+                    pstmt.setInt(1, nrBon);
+                    pstmt.setString(2, String.valueOf(jTable1.getValueAt(i, 0)));
+                    pstmt.setDouble(3, Double.parseDouble(jTable1.getValueAt(i, 1).toString()));
+                    pstmt.setInt(4, (Integer) jTable1.getValueAt(i, 2));
+                    pstmt.setDouble(5, (Double) jTable1.getValueAt(i, 3));
+                    pstmt.setString(6, (jTable1.getValueAt(contorTabelLinii - 2, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 2, 3)).toString());
+                    pstmt.setString(7, login.loggedUser);
+                    pstmt.setTimestamp(8, timestamp);
+                    pstmt.setDouble(9, (rest * -1));
+                    pstmt.executeUpdate();
+
+                }
+            } catch (SQLException ex) {
+
+                Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            break;
             case 2:// pentru 2 metode de plata
                 
-                 try{
-        Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
-        String sql = "INSERT INTO bonuri(nrbon, numeprodus, pret, nrbuc, prettotal, metodadeplata1, casier, data ,rest, metodadeplata2) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        PreparedStatement pstmt = conn.prepareStatement(sql);
-        
-        for(int i = 0; i < contorTabelLinii - 3; i++){
-            pstmt.setInt(1, nrBon);
-            pstmt.setString(2, String.valueOf(jTable1.getValueAt(i, 0)));
-            pstmt.setDouble(3, Double.parseDouble(jTable1.getValueAt(i, 1).toString()));
-            pstmt.setInt(4, (Integer)jTable1.getValueAt(i, 2));
-            pstmt.setDouble(5, (Double)jTable1.getValueAt(i, 3));
-            pstmt.setString(6, (jTable1.getValueAt(contorTabelLinii - 3, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 3, 3)).toString());
-            pstmt.setString(7, login.loggedUser);
-            pstmt.setTimestamp(8, timestamp);
-            pstmt.setDouble(9, (rest * -1) );
-            pstmt.setString(10, (jTable1.getValueAt(contorTabelLinii - 2, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 2, 3)).toString());
-            pstmt.executeUpdate();       
-    }
-        }catch (SQLException ex) {
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);    
-          }
-            
-                 
-                break;
+                 try {
+                Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+                String sql = "INSERT INTO bonuri(nrbon, numeprodus, pret, nrbuc, prettotal, metodadeplata1, casier, data ,rest, metodadeplata2) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                PreparedStatement pstmt = conn.prepareStatement(sql);
+
+                for (int i = 0; i < contorTabelLinii - 3; i++) {
+                    pstmt.setInt(1, nrBon);
+                    pstmt.setString(2, String.valueOf(jTable1.getValueAt(i, 0)));
+                    pstmt.setDouble(3, Double.parseDouble(jTable1.getValueAt(i, 1).toString()));
+                    pstmt.setInt(4, (Integer) jTable1.getValueAt(i, 2));
+                    pstmt.setDouble(5, (Double) jTable1.getValueAt(i, 3));
+                    pstmt.setString(6, (jTable1.getValueAt(contorTabelLinii - 3, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 3, 3)).toString());
+                    pstmt.setString(7, login.loggedUser);
+                    pstmt.setTimestamp(8, timestamp);
+                    pstmt.setDouble(9, (rest * -1));
+                    pstmt.setString(10, (jTable1.getValueAt(contorTabelLinii - 2, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 2, 3)).toString());
+                    pstmt.executeUpdate();
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            break;
             case 3:// pentru 3 metode de plata (card, cash, tichete)
                 
-                  try{
-        Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
-        String sql = "INSERT INTO bonuri(nrbon, numeprodus, pret, nrbuc, prettotal, metodadeplata1, casier, data ,rest, metodadeplata2, metodadeplata3) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        PreparedStatement pstmt = conn.prepareStatement(sql);
-        
-        for(int i = 0; i < contorTabelLinii - 4; i++){
-            pstmt.setInt(1, nrBon);
-            pstmt.setString(2, String.valueOf(jTable1.getValueAt(i, 0)));
-            pstmt.setDouble(3, Double.parseDouble(jTable1.getValueAt(i, 1).toString()));
-            pstmt.setInt(4, (Integer)jTable1.getValueAt(i, 2));
-            pstmt.setDouble(5, (Double)jTable1.getValueAt(i, 3));
-            pstmt.setString(6, (jTable1.getValueAt(contorTabelLinii - 4, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 4, 3)).toString());
-            pstmt.setString(7, login.loggedUser);
-            pstmt.setTimestamp(8, timestamp);
-            pstmt.setDouble(9, (rest * -1) );
-            pstmt.setString(10, (jTable1.getValueAt(contorTabelLinii - 3, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 3, 3)).toString());
-            pstmt.setString(11, (jTable1.getValueAt(contorTabelLinii - 2, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 2, 3)).toString());
-            pstmt.executeUpdate();       
-    }
-        }catch (SQLException ex) {
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);    
-          }
-                 
-                break;
+                  try {
+                Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+                String sql = "INSERT INTO bonuri(nrbon, numeprodus, pret, nrbuc, prettotal, metodadeplata1, casier, data ,rest, metodadeplata2, metodadeplata3) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                PreparedStatement pstmt = conn.prepareStatement(sql);
+
+                for (int i = 0; i < contorTabelLinii - 4; i++) {
+                    pstmt.setInt(1, nrBon);
+                    pstmt.setString(2, String.valueOf(jTable1.getValueAt(i, 0)));
+                    pstmt.setDouble(3, Double.parseDouble(jTable1.getValueAt(i, 1).toString()));
+                    pstmt.setInt(4, (Integer) jTable1.getValueAt(i, 2));
+                    pstmt.setDouble(5, (Double) jTable1.getValueAt(i, 3));
+                    pstmt.setString(6, (jTable1.getValueAt(contorTabelLinii - 4, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 4, 3)).toString());
+                    pstmt.setString(7, login.loggedUser);
+                    pstmt.setTimestamp(8, timestamp);
+                    pstmt.setDouble(9, (rest * -1));
+                    pstmt.setString(10, (jTable1.getValueAt(contorTabelLinii - 3, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 3, 3)).toString());
+                    pstmt.setString(11, (jTable1.getValueAt(contorTabelLinii - 2, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 2, 3)).toString());
+                    pstmt.executeUpdate();
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            break;
         }
 // sfarsit switch
 
         //preview BON(trimitere pentru imprimare);
-                    
-                         
-                    
     }
 
     //adauga produsul pe care se face click in tabel , apoi calculeaza totalul
@@ -2458,7 +2773,7 @@ public class loginAproved extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
-      
+
         contorTabelColoane = 0;
         contorTabelLinii++;
         TabelPrincipal.setVisible(true);
@@ -2466,28 +2781,30 @@ public class loginAproved extends javax.swing.JFrame {
 
         patiserie.setVisible(false);
         bauturi.setVisible(false);
+        bazar.setVisible(false);
         optiuniSubMeniu.setVisible(false);
+        
 
         calculeazaTotal();
     }
-    
-    public static void previewBon() throws IOException{
+
+    public static void previewBon() throws IOException {
         double total = 0;
-        for(int i = 0; i < contorTabelLinii - metodeDePlataUtilizate - 1; i++){
+        for (int i = 0; i < contorTabelLinii - metodeDePlataUtilizate - 1; i++) {
             total = total + Double.parseDouble(jTable1.getValueAt(i, 3).toString());
         }
-    try{
-        DateTimeFormatter formatterOre = DateTimeFormatter.ofPattern("HH:mm:ss");
-        DateTimeFormatter formatterOrePentruSalvareBon = DateTimeFormatter.ofPattern("HH.mm.ss");
-        DateTimeFormatter formatterData = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-        
-        System.out.println("Creez Bonul!");
-        
-        String fileName = acumTimp.format(formatterData) + " " + acumTimp.format(formatterOrePentruSalvareBon) + ".pdf" ;
-        
-        PDDocument doc = new PDDocument();
-        PDPage page = new PDPage();
-            PDRectangle rectangle=new PDRectangle();
+        try {
+            DateTimeFormatter formatterOre = DateTimeFormatter.ofPattern("HH:mm:ss");
+            DateTimeFormatter formatterOrePentruSalvareBon = DateTimeFormatter.ofPattern("HH.mm.ss");
+            DateTimeFormatter formatterData = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+
+            System.out.println("Creez Bonul!");
+
+            String fileName = acumTimp.format(formatterData) + " " + acumTimp.format(formatterOrePentruSalvareBon) + ".pdf";
+
+            PDDocument doc = new PDDocument();
+            PDPage page = new PDPage();
+            PDRectangle rectangle = new PDRectangle();
             rectangle.setLowerLeftX(0);
             rectangle.setLowerLeftY(0);
             rectangle.setUpperRightX(375);
@@ -2496,124 +2813,120 @@ public class loginAproved extends javax.swing.JFrame {
             page.setMediaBox(rectangle);
             page.setCropBox(rectangle);
 
-        
-        doc.addPage(page);
-       
-        PDPageContentStream content = new PDPageContentStream(doc, page);
-  
- 	                content.beginText();
-	                content.setFont(PDType1Font.TIMES_ROMAN, 12);
-	                content.newLineAtOffset(0, 1350);
-	                content.showText("*******************SC ROBERT COSTACHE SRL*****************");
-                        content.newLineAtOffset(150, -15);
-                        content.showText("HYPERMARKET");
-                        content.newLineAtOffset(-37, -15);
-                        content.showText("CALEA VITAN 231, SECTOR 3");    
-                        content.newLineAtOffset(47, -15);
-                        content.showText("BUCURESTI");       
-                        content.newLineAtOffset(-17, -15);
-                        content.showText("C.I.F.: RO123456789"); 
-                         content.newLineAtOffset(-143, -25);
-                         content.setFont(PDType1Font.TIMES_ROMAN, 24);
-                        content.showText("----                BON FISCAL            ----");
-                        content.setFont(PDType1Font.TIMES_ROMAN, 12);
-                        content.newLineAtOffset(0, -15);
-                        content.showText( "DATA:" + acumTimp.format(formatterData));  
-                        content.newLineAtOffset(300, 0);
-                        content.showText("ORA: " + acumTimp.format(formatterOre));
-                         content.newLineAtOffset(-300, -15);
-                        content.showText("Nume"); 
-                        content.newLineAtOffset(185, 0);
-                        content.showText("Pret/Buc");
-                        content.newLineAtOffset(60, 0);
-                        content.showText("Cantitate");
-                        content.newLineAtOffset(72, 0);
-                        content.showText("Total");
-                     
-                         content.newLineAtOffset(-317, -15);
-                        content.showText( "----------------------------------------------------------------------------------------------");
-                         content.newLineAtOffset(0, -15);
-                        
-                         for(int i = 0; i < contorTabelLinii - metodeDePlataUtilizate - 1; i++){
-                             if(jTable1.getValueAt(i, 0).toString().length() > 20){
-                                 String a = jTable1.getValueAt(i, 0).toString().substring(0, 20);
-                                 content.showText(jTable1.getValueAt(i,0).toString().toUpperCase());
-                             }else{
-                             content.showText(jTable1.getValueAt(i,0).toString().toUpperCase());
-                             }
-                             content.newLineAtOffset(190, -15);
-                             content.showText("" + jTable1.getValueAt(i,1));
-                             content.newLineAtOffset(70, 0);
-                             content.showText("" + jTable1.getValueAt(i,2));
-                             content.newLineAtOffset(65, 0);
-                             content.showText("" + df2.format(Double.parseDouble(String.valueOf(jTable1.getValueAt(i,3)))));
-                             content.newLineAtOffset(-325, -15);
-                         }
-                         
-                         content.showText( "TOTAL PRODUSE SCANATE: " + (contorTabelLinii - metodeDePlataUtilizate - 1));
-                         content.newLineAtOffset(0, -15);
-                         content.showText( "----------------------------------------------------------------------------------------------");
-                         content.newLineAtOffset(0, -15);
-                         content.setFont(PDType1Font.TIMES_ROMAN, 16);
-                         content.showText( "TOTAL:");
-                         content.newLineAtOffset(330, 0);
-                         content.showText( df2.format(total));
-                         content.setFont(PDType1Font.TIMES_ROMAN, 12);
-                         content.newLineAtOffset(-330, -15);
-	                 content.showText(  "----------------------------------------------------------------------------------------------");
-                         content.newLineAtOffset(0, -30);
-                         
-                         //tiparirea metodelor de plata pe bon
-                         for(int i = contorTabelLinii - metodeDePlataUtilizate - 1; i < contorTabelLinii - 1; i++){
-                             if(jTable1.getValueAt(i, 0).toString().length() > 20){
-                                 String a = jTable1.getValueAt(i, 0).toString().substring(0, 20);
-                                 content.showText(jTable1.getValueAt(i,0).toString().toUpperCase());
-                             }else{
-                             content.showText(jTable1.getValueAt(i,0).toString().toUpperCase());
-                             }
-                             content.newLineAtOffset(190, -15);
-                             content.showText("" + jTable1.getValueAt(i,1));
-                             content.newLineAtOffset(70, 0);
-                             content.showText("" + jTable1.getValueAt(i,2));
-                             content.newLineAtOffset(65, 0);
-                             content.showText("" + df2.format(Double.parseDouble(String.valueOf(jTable1.getValueAt(i,3)))));
-                             content.newLineAtOffset(-325, -15);
-                         }
-                         
-                         content.newLineAtOffset(0, -15);
-                         content.showText("TVA:");
-                         content.newLineAtOffset(328, 0);
-                         content.showText(df2.format((total) * 0.19));
-                         content.newLineAtOffset(-218, -15);
-	                 content.showText("MULTUMIM CA NE-ATI ALES!");
-                          content.newLineAtOffset(50, -15);
-                          content.showText("O ZI BUNA!");
-                          content.newLineAtOffset(-160, -15);
-                          content.showText("CASIER: ");
-                          content.newLineAtOffset(330, 0);
-                          content.showText(login.loggedUser);
-                          content.newLineAtOffset(-330, -15);
-                         content.showText("Numar Bon: " + nrBon);
-                         content.newLineAtOffset(0, -15);
-                         content.showText( "DATA: " + acumTimp.format(formatterData));  
-                         content.newLineAtOffset(300, 0);
-                         content.showText("ORA: " + acumTimp.format(formatterOre));
-                         content.newLineAtOffset(-300, -15);
-                         
-                         
-                         content.endText();
-        content.close();
-      
-        doc.save("Bonuri/ " + fileName);
-        doc.close();
-        System.out.println("BON SALVAT IN: " + System.getProperty("user.dir"));
+            doc.addPage(page);
+
+            PDPageContentStream content = new PDPageContentStream(doc, page);
+
+            content.beginText();
+            content.setFont(PDType1Font.TIMES_ROMAN, 12);
+            content.newLineAtOffset(0, 1350);
+            content.showText("*******************SC ROBERT COSTACHE SRL*****************");
+            content.newLineAtOffset(150, -15);
+            content.showText("HYPERMARKET");
+            content.newLineAtOffset(-37, -15);
+            content.showText("CALEA VITAN 231, SECTOR 3");
+            content.newLineAtOffset(47, -15);
+            content.showText("BUCURESTI");
+            content.newLineAtOffset(-17, -15);
+            content.showText("C.I.F.: RO123456789");
+            content.newLineAtOffset(-143, -25);
+            content.setFont(PDType1Font.TIMES_ROMAN, 24);
+            content.showText("----                BON FISCAL            ----");
+            content.setFont(PDType1Font.TIMES_ROMAN, 12);
+            content.newLineAtOffset(0, -15);
+            content.showText("DATA:" + acumTimp.format(formatterData));
+            content.newLineAtOffset(300, 0);
+            content.showText("ORA: " + acumTimp.format(formatterOre));
+            content.newLineAtOffset(-300, -15);
+            content.showText("Nume");
+            content.newLineAtOffset(185, 0);
+            content.showText("Pret/Buc");
+            content.newLineAtOffset(60, 0);
+            content.showText("Cantitate");
+            content.newLineAtOffset(72, 0);
+            content.showText("Total");
+
+            content.newLineAtOffset(-317, -15);
+            content.showText("----------------------------------------------------------------------------------------------");
+            content.newLineAtOffset(0, -15);
+
+            for (int i = 0; i < contorTabelLinii - metodeDePlataUtilizate - 1; i++) {
+                if (jTable1.getValueAt(i, 0).toString().length() > 20) {
+                    String a = jTable1.getValueAt(i, 0).toString().substring(0, 20);
+                    content.showText(jTable1.getValueAt(i, 0).toString().toUpperCase());
+                } else {
+                    content.showText(jTable1.getValueAt(i, 0).toString().toUpperCase());
+                }
+                content.newLineAtOffset(190, -15);
+                content.showText("" + jTable1.getValueAt(i, 1));
+                content.newLineAtOffset(70, 0);
+                content.showText("" + jTable1.getValueAt(i, 2));
+                content.newLineAtOffset(65, 0);
+                content.showText("" + df2.format(Double.parseDouble(String.valueOf(jTable1.getValueAt(i, 3)))));
+                content.newLineAtOffset(-325, -15);
+            }
+
+            content.showText("TOTAL PRODUSE SCANATE: " + (contorTabelLinii - metodeDePlataUtilizate - 1));
+            content.newLineAtOffset(0, -15);
+            content.showText("----------------------------------------------------------------------------------------------");
+            content.newLineAtOffset(0, -15);
+            content.setFont(PDType1Font.TIMES_ROMAN, 16);
+            content.showText("TOTAL:");
+            content.newLineAtOffset(330, 0);
+            content.showText(df2.format(total));
+            content.setFont(PDType1Font.TIMES_ROMAN, 12);
+            content.newLineAtOffset(-330, -15);
+            content.showText("----------------------------------------------------------------------------------------------");
+            content.newLineAtOffset(0, -30);
+
+            //tiparirea metodelor de plata pe bon
+            for (int i = contorTabelLinii - metodeDePlataUtilizate - 1; i < contorTabelLinii - 1; i++) {
+                if (jTable1.getValueAt(i, 0).toString().length() > 20) {
+                    String a = jTable1.getValueAt(i, 0).toString().substring(0, 20);
+                    content.showText(jTable1.getValueAt(i, 0).toString().toUpperCase());
+                } else {
+                    content.showText(jTable1.getValueAt(i, 0).toString().toUpperCase());
+                }
+                content.newLineAtOffset(190, -15);
+                content.showText("" + jTable1.getValueAt(i, 1));
+                content.newLineAtOffset(70, 0);
+                content.showText("" + jTable1.getValueAt(i, 2));
+                content.newLineAtOffset(65, 0);
+                content.showText("" + df2.format(Double.parseDouble(String.valueOf(jTable1.getValueAt(i, 3)))));
+                content.newLineAtOffset(-325, -15);
+            }
+
+            content.newLineAtOffset(0, -15);
+            content.showText("TVA:");
+            content.newLineAtOffset(328, 0);
+            content.showText(df2.format((total) * 0.19));
+            content.newLineAtOffset(-218, -15);
+            content.showText("MULTUMIM CA NE-ATI ALES!");
+            content.newLineAtOffset(50, -15);
+            content.showText("O ZI BUNA!");
+            content.newLineAtOffset(-160, -15);
+            content.showText("CASIER: ");
+            content.newLineAtOffset(330, 0);
+//            content.showText(login.loggedUser);
+            content.newLineAtOffset(-330, -15);
+            content.showText("Numar Bon: " + nrBon);
+            content.newLineAtOffset(0, -15);
+            content.showText("DATA: " + acumTimp.format(formatterData));
+            content.newLineAtOffset(300, 0);
+            content.showText("ORA: " + acumTimp.format(formatterOre));
+            content.newLineAtOffset(-300, -15);
+
+            content.endText();
+            content.close();
+
+            doc.save("Bonuri/ " + fileName);
+            doc.close();
+            System.out.println("BON SALVAT IN: " + System.getProperty("user.dir"));
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
-    catch(IOException e){
-        System.out.println(e.getMessage());   
-    }
-    }
-    
-   
+
     /**
      * @param args the command line arguments
      */
@@ -2646,7 +2959,7 @@ public class loginAproved extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                
+
                 new loginAproved().setVisible(true);
 
             }
@@ -2656,12 +2969,37 @@ public class loginAproved extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JPanel TabelPrincipal;
     private javax.swing.JPanel bauturi;
+    private javax.swing.JPanel bazar;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton100;
     private javax.swing.JButton jButton101;
+    private javax.swing.JButton jButton102;
+    private javax.swing.JButton jButton103;
+    private javax.swing.JButton jButton104;
+    private javax.swing.JButton jButton105;
+    private javax.swing.JButton jButton106;
+    private javax.swing.JButton jButton107;
+    private javax.swing.JButton jButton108;
+    private javax.swing.JButton jButton109;
     private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton110;
+    private javax.swing.JButton jButton111;
+    private javax.swing.JButton jButton112;
+    private javax.swing.JButton jButton113;
+    private javax.swing.JButton jButton114;
+    private javax.swing.JButton jButton115;
+    private javax.swing.JButton jButton116;
+    private javax.swing.JButton jButton117;
+    private javax.swing.JButton jButton118;
+    private javax.swing.JButton jButton119;
     private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton120;
+    private javax.swing.JButton jButton121;
+    private javax.swing.JButton jButton122;
+    private javax.swing.JButton jButton123;
+    private javax.swing.JButton jButton124;
+    private javax.swing.JButton jButton125;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
@@ -2732,7 +3070,20 @@ public class loginAproved extends javax.swing.JFrame {
     private javax.swing.JButton jButton74;
     private javax.swing.JButton jButton75;
     private javax.swing.JButton jButton76;
+    private javax.swing.JButton jButton77;
+    private javax.swing.JButton jButton78;
+    private javax.swing.JButton jButton79;
     private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton80;
+    private javax.swing.JButton jButton81;
+    private javax.swing.JButton jButton82;
+    private javax.swing.JButton jButton83;
+    private javax.swing.JButton jButton84;
+    private javax.swing.JButton jButton85;
+    private javax.swing.JButton jButton86;
+    private javax.swing.JButton jButton87;
+    private javax.swing.JButton jButton88;
+    private javax.swing.JButton jButton89;
     private javax.swing.JButton jButton9;
     private javax.swing.JButton jButton90;
     private javax.swing.JButton jButton91;

@@ -73,7 +73,10 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jTextField1" min="-2" pref="257" max="-2" attributes="0"/>
-                      <Component id="jLabel2" min="-2" pref="219" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel2" min="-2" pref="219" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" pref="280" max="-2" attributes="0"/>
@@ -85,13 +88,12 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel1" alignment="0" pref="111" max="32767" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel1" min="-2" pref="111" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel2" min="-2" pref="24" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jTextField1" min="-2" pref="41" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jTextField1" min="-2" pref="62" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -123,14 +125,11 @@
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Times New Roman" size="14" style="1"/>
+              <Font name="Times New Roman" size="18" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cantitate/ Cod Produs"/>
           </Properties>
@@ -138,6 +137,13 @@
       </SubComponents>
     </Container>
     <Container class="javax.swing.JLayeredPane" name="mainWindow">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder thickness="2"/>
+          </Border>
+        </Property>
+      </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
@@ -157,12 +163,12 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane1" alignment="0" pref="575" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="0" pref="571" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane1" alignment="0" pref="789" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="0" pref="799" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -180,6 +186,11 @@
               <SubComponents>
                 <Component class="javax.swing.JTable" name="jTable1">
                   <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                        <BevelBorder/>
+                      </Border>
+                    </Property>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                       <Table columnCount="4" rowCount="47">
                         <Column editable="false" title="Nume" type="java.lang.String"/>
@@ -250,9 +261,6 @@
                 </Property>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
                 <Property name="inheritsPopupMenu" type="boolean" value="true"/>
-                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-                  <Insets value="[2, 2, 18, 18]"/>
-                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
@@ -951,6 +959,311 @@
             </Component>
           </SubComponents>
         </Container>
+        <Container class="javax.swing.JPanel" name="bazar">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="card3"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+            <Property name="columns" type="int" value="6"/>
+            <Property name="horizontalGap" type="int" value="10"/>
+            <Property name="rows" type="int" value="6"/>
+            <Property name="verticalGap" type="int" value="10"/>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="jButton102">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="10" style="1"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="inheritsPopupMenu" type="boolean" value="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton102ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton(numeProdus + &quot; - &quot; + pretProdus, pungaHartie)"/>
+                <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="Icon pungaHartie = new ImageIcon(&quot;src\\main\\java\\ImaginiBazar\\pungaHartie.jpg&quot;);"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jButton102.setVerticalTextPosition(SwingConstants.TOP);&#xa;jButton102.setHorizontalTextPosition(SwingConstants.LEFT);"/>
+                <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="try {    &#xa;            Connection conn = DriverManager.getConnection(&quot;jdbc:derby://localhost:1527/magazinDB; create = true &quot;, &quot;robert&quot;, &quot;test&quot;);&#xa;            Statement st =  conn.createStatement();&#xa;            ResultSet rs = st.executeQuery(&quot;select NUME from PRODUSE where cod  = 12533&quot;);    &#xa;               if(rs.next())&#xa;                &#xa;                 numeProdus = rs.getString(1);&#xa;                 &#xa;&#xa;            rs = st.executeQuery(&quot;select Pret from PRODUSE where cod  = 12533&quot;);&#xa;                   if(rs.next())&#xa;                 pretProdus = rs.getString(1);&#xa;            jButton102.setText(numeProdus + &quot; - &quot; + pretProdus);&#xa;            jButton102.setToolTipText(numeProdus + &quot; - &quot; + pretProdus);    &#xa;} catch (SQLException ex) {&#xa;            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton103">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="10" style="1"/>
+                </Property>
+                <Property name="toolTipText" type="java.lang.String" value=""/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Default Cursor"/>
+                </Property>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton103ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton(numeProdus + &quot; - &quot; + pretProdus, sacosaTextil)"/>
+                <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="Icon sacosaTextil = new ImageIcon(&quot;src\\main\\java\\ImaginiBazar\\sacosaTextil.jpg&quot;);"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jButton103.setVerticalTextPosition(SwingConstants.TOP);&#xa;jButton103.setHorizontalTextPosition(SwingConstants.LEFT);"/>
+                <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="try {    &#xa;            Connection conn = DriverManager.getConnection(&quot;jdbc:derby://localhost:1527/magazinDB; create = true &quot;, &quot;robert&quot;, &quot;test&quot;);&#xa;            Statement st =  conn.createStatement();&#xa;            ResultSet rs = st.executeQuery(&quot;select NUME from PRODUSE where cod  = 12534&quot;);    &#xa;               if(rs.next())&#xa;                &#xa;                 numeProdus = rs.getString(1);&#xa;                 &#xa;&#xa;            rs = st.executeQuery(&quot;select Pret from PRODUSE where cod  = 12534&quot;);&#xa;                   if(rs.next())&#xa;                 pretProdus = rs.getString(1);&#xa;            jButton103.setText(numeProdus + &quot; - &quot; + pretProdus);&#xa;            jButton103.setToolTipText(numeProdus + &quot; - &quot; + pretProdus);&#xa;} catch (SQLException ex) {&#xa;            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton104">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="10" style="1"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton104ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="try {    &#xa;            Connection conn = DriverManager.getConnection(&quot;jdbc:derby://localhost:1527/magazinDB; create = true &quot;, &quot;robert&quot;, &quot;test&quot;);&#xa;            Statement st =  conn.createStatement();&#xa;            ResultSet rs = st.executeQuery(&quot;select NUME from PRODUSE where cod  = 12535&quot;);    &#xa;            &#xa;               if(rs.next())&#xa;                 numeProdus = rs.getString(1);&#xa;&#xa;            rs = st.executeQuery(&quot;select Pret from PRODUSE where cod  = 12535&quot;);&#xa;                   if(rs.next())&#xa;                 pretProdus = rs.getString(1);&#xa;            jButton104.setText(numeProdus + &quot; - &quot; + pretProdus);&#xa;            jButton104.setToolTipText(numeProdus + &quot; - &quot; + pretProdus);&#xa;&#xa;    } catch (SQLException ex) {&#xa;            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }"/>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton(numeProdus + &quot; - &quot; + pretProdus, pungaTermica)"/>
+                <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="Icon pungaTermica = new ImageIcon(&quot;src\\main\\java\\ImaginiBazar\\pungaTermica.jpg&quot;);"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jButton104.setVerticalTextPosition(SwingConstants.TOP);&#xa;jButton104.setHorizontalTextPosition(SwingConstants.LEFT);"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton105">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="10" style="1"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton105ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="try {    &#xa;            Connection conn = DriverManager.getConnection(&quot;jdbc:derby://localhost:1527/magazinDB; create = true &quot;, &quot;robert&quot;, &quot;test&quot;);&#xa;            Statement st =  conn.createStatement();&#xa;            ResultSet rs = st.executeQuery(&quot;select NUME from PRODUSE where cod  = 12536&quot;);    &#xa;            &#xa;               if(rs.next())&#xa;                 numeProdus = rs.getString(1);&#xa;&#xa;            rs = st.executeQuery(&quot;select Pret from PRODUSE where cod  = 12536&quot;);&#xa;                   if(rs.next())&#xa;                 pretProdus = rs.getString(1);&#xa;            jButton105.setText(numeProdus + &quot; - &quot; + pretProdus);&#xa;            jButton105.setToolTipText(numeProdus + &quot; - &quot; + pretProdus);&#xa;&#xa;    } catch (SQLException ex) {&#xa;            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }"/>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton(numeProdus + &quot; - &quot; + pretProdus, tacamuriPlastic)"/>
+                <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="Icon tacamuriPlastic = new ImageIcon(&quot;src\\main\\java\\ImaginiBazar\\tacamuriPlastic.jpg&quot;);"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jButton105.setVerticalTextPosition(SwingConstants.TOP);&#xa;jButton105.setHorizontalTextPosition(SwingConstants.LEFT);"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton106">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="10" style="1"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton106ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton(numeProdus + &quot; - &quot; + pretProdus, caserola250g)"/>
+                <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="Icon caserola250g = new ImageIcon(&quot;src\\main\\java\\ImaginiBazar\\caserola250g.jpg&quot;);"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jButton106.setVerticalTextPosition(SwingConstants.TOP);&#xa;jButton106.setHorizontalTextPosition(SwingConstants.LEFT);"/>
+                <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="try {    &#xa;            Connection conn = DriverManager.getConnection(&quot;jdbc:derby://localhost:1527/magazinDB; create = true &quot;, &quot;robert&quot;, &quot;test&quot;);&#xa;            Statement st =  conn.createStatement();&#xa;            ResultSet rs = st.executeQuery(&quot;select NUME from PRODUSE where cod  = 12537&quot;);    &#xa;            &#xa;               if(rs.next())&#xa;                 numeProdus = rs.getString(1);&#xa;&#xa;            rs = st.executeQuery(&quot;select Pret from PRODUSE where cod  = 12537&quot;);&#xa;                   if(rs.next())&#xa;                 pretProdus = rs.getString(1);&#xa;            jButton106.setText(numeProdus + &quot; - &quot; + pretProdus);&#xa;            jButton106.setToolTipText(numeProdus + &quot; - &quot; + pretProdus);&#xa;&#xa;    } catch (SQLException ex) {&#xa;            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton107">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton108">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton109">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton110">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton111">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton112">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton113">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton113ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton114">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton115">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton116">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton117">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton118">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton119">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton120">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton121">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton122">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton123">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton124">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton125">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JLayeredPane" name="optionsWindow">
@@ -981,7 +1294,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace pref="24" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -999,7 +1312,7 @@
                                       <Component id="jButton4" min="-2" pref="100" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jButton54" min="-2" pref="115" max="-2" attributes="0"/>
@@ -1024,7 +1337,7 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jButton59" linkSize="2" min="-2" pref="85" max="-2" attributes="0"/>
-                      <EmptySpace pref="440" max="32767" attributes="0"/>
+                      <EmptySpace pref="454" max="32767" attributes="0"/>
                       <Component id="jButton54" min="-2" pref="34" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1060,7 +1373,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jButton3"/>
+                <Property name="text" type="java.lang.String" value="Bazar"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
                     <BevelBorder/>
@@ -1124,10 +1437,35 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton25" min="-2" pref="100" max="-2" attributes="0"/>
-                      <EmptySpace pref="142" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jButton25" linkSize="5" min="-2" pref="100" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jButton77" linkSize="5" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jButton78" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton80" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton82" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton84" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton86" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton88" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jButton89" linkSize="5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton87" linkSize="5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton85" linkSize="5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton83" linkSize="5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton81" linkSize="5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton79" linkSize="5" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1135,8 +1473,41 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton25" min="-2" pref="85" max="-2" attributes="0"/>
-                      <EmptySpace pref="691" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jButton77" linkSize="6" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton25" linkSize="6" min="-2" pref="85" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jButton78" linkSize="6" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton79" linkSize="6" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jButton80" linkSize="6" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton81" linkSize="6" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButton82" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton83" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButton84" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton85" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButton86" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton87" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButton88" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton89" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1154,6 +1525,32 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton25ActionPerformed"/>
               </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton77">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton78">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton79">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton80">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton81">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton82">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton83">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton84">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton85">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton86">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton87">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton88">
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton89">
             </Component>
           </SubComponents>
         </Container>
@@ -1181,7 +1578,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jButton57" alignment="1" max="32767" attributes="0"/>
-                          <Component id="jButton56" alignment="1" pref="232" max="32767" attributes="0"/>
+                          <Component id="jButton56" alignment="1" pref="248" max="32767" attributes="0"/>
                           <Component id="jButton55" alignment="0" max="32767" attributes="0"/>
                           <Component id="jButton58" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -1200,7 +1597,7 @@
                       <Component id="jButton55" min="-2" pref="55" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="jButton58" min="-2" pref="55" max="-2" attributes="0"/>
-                      <EmptySpace pref="442" max="32767" attributes="0"/>
+                      <EmptySpace pref="456" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1273,7 +1670,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace pref="24" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jButton62" min="-2" pref="100" max="-2" attributes="0"/>
@@ -1286,7 +1683,7 @@
                               <Component id="jButton61" min="-2" pref="100" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1303,7 +1700,7 @@
                           <Component id="jButton62" alignment="3" min="-2" pref="85" max="-2" attributes="0"/>
                           <Component id="jButton63" alignment="3" min="-2" pref="85" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="588" max="32767" attributes="0"/>
+                      <EmptySpace pref="602" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1383,7 +1780,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Component id="jButton90" linkSize="3" min="-2" pref="100" max="-2" attributes="0"/>
-                      <EmptySpace pref="12" max="32767" attributes="0"/>
+                      <EmptySpace pref="28" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jButton92" min="-2" pref="100" max="-2" attributes="0"/>
                           <Component id="jButton91" linkSize="3" min="-2" max="-2" attributes="0"/>
@@ -1402,7 +1799,7 @@
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jButton92" min="-2" pref="85" max="-2" attributes="0"/>
-                      <EmptySpace pref="595" max="32767" attributes="0"/>
+                      <EmptySpace pref="609" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1455,20 +1852,20 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="23" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jButton99" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
                           <Component id="jButton97" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
                           <Component id="jButton93" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
                           <Component id="jButton95" alignment="1" min="-2" pref="100" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jButton101" min="-2" pref="100" max="-2" attributes="0"/>
                           <Component id="jButton96" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButton94" min="-2" pref="100" max="-2" attributes="0"/>
                           <Component id="jButton98" min="-2" pref="100" max="-2" attributes="0"/>
                           <Component id="jButton100" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="jButton94" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                   </Group>
@@ -1482,23 +1879,23 @@
                           <Component id="jButton93" pref="85" max="32767" attributes="0"/>
                           <Component id="jButton94" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="9" max="32767" attributes="0"/>
+                      <EmptySpace pref="19" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jButton95" min="-2" pref="85" max="-2" attributes="0"/>
-                          <Component id="jButton96" pref="88" max="32767" attributes="0"/>
+                          <Component id="jButton96" pref="89" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton97" pref="88" max="32767" attributes="0"/>
-                          <Component id="jButton98" pref="88" max="32767" attributes="0"/>
+                          <Component id="jButton97" pref="89" max="32767" attributes="0"/>
+                          <Component id="jButton98" pref="89" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton99" pref="88" max="32767" attributes="0"/>
-                          <Component id="jButton100" pref="88" max="32767" attributes="0"/>
+                          <Component id="jButton99" pref="89" max="32767" attributes="0"/>
+                          <Component id="jButton100" pref="89" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton101" pref="85" max="32767" attributes="0"/>
+                      <Component id="jButton101" pref="86" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="315" max="-2" attributes="0"/>
                   </Group>
               </Group>
