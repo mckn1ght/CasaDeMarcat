@@ -209,6 +209,38 @@ public class loginAproved extends javax.swing.JFrame {
         jButton123 = new javax.swing.JButton();
         jButton124 = new javax.swing.JButton();
         jButton125 = new javax.swing.JButton();
+        mancareGatita = new javax.swing.JPanel();
+        Icon supaRosii = new ImageIcon("src\\main\\java\\ImaginiMancareGatita\\supaRosii.jpg");
+        jButton126 = new javax.swing.JButton(numeProdus + " - " + pretProdus, supaRosii);
+        Icon supaCremaCartof = new ImageIcon("src\\main\\java\\ImaginiMancareGatita\\supaCremaCartof.jpg");
+        jButton127 = new javax.swing.JButton(numeProdus + " - " + pretProdus, supaCremaCartof);
+        Icon ciorbaDeBurta = new ImageIcon("src\\main\\java\\ImaginiMancareGatita\\ciorbaDeBurta.jpg");
+        jButton128 = new javax.swing.JButton(numeProdus + " - " + pretProdus, ciorbaDeBurta);
+        Icon cartofiPrajiti300g = new ImageIcon("src\\main\\java\\ImaginiMancareGatita\\cartofiPrajiti300g.jpg");
+        jButton129 = new javax.swing.JButton(numeProdus + " - " + pretProdus, cartofiPrajiti300g);
+        Icon meniuPiept = new ImageIcon("src\\main\\java\\ImaginiMancareGatita\\meniuPiept.jpg");
+        jButton130 = new javax.swing.JButton(numeProdus + " - " + pretProdus, meniuPiept);
+        Icon meniuPulpaPui = new ImageIcon("src\\main\\java\\ImaginiMancareGatita\\meniuPulpaPui.jpg");
+        jButton131 = new javax.swing.JButton(numeProdus + " - " + pretProdus, meniuPulpaPui);
+        Icon meniuBurger = new ImageIcon("src\\main\\java\\ImaginiMancareGatita\\meniuBurger.jpg");
+        jButton132 = new javax.swing.JButton(numeProdus + " - " + pretProdus, meniuBurger);
+        jButton133 = new javax.swing.JButton();
+        jButton134 = new javax.swing.JButton();
+        jButton135 = new javax.swing.JButton();
+        jButton136 = new javax.swing.JButton();
+        jButton137 = new javax.swing.JButton();
+        jButton138 = new javax.swing.JButton();
+        jButton139 = new javax.swing.JButton();
+        jButton140 = new javax.swing.JButton();
+        jButton141 = new javax.swing.JButton();
+        jButton142 = new javax.swing.JButton();
+        jButton143 = new javax.swing.JButton();
+        jButton144 = new javax.swing.JButton();
+        jButton145 = new javax.swing.JButton();
+        jButton146 = new javax.swing.JButton();
+        jButton147 = new javax.swing.JButton();
+        jButton148 = new javax.swing.JButton();
+        jButton149 = new javax.swing.JButton();
         optionsWindow = new javax.swing.JLayeredPane();
         optiuniPrincipal = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -269,11 +301,11 @@ public class loginAproved extends javax.swing.JFrame {
         jButton72 = new javax.swing.JButton();
         jButton73 = new javax.swing.JButton();
         jButton74 = new javax.swing.JButton();
-        jButton75 = new javax.swing.JButton();
         jButton76 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Casa de Marcat 0.8");
+        setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -296,7 +328,6 @@ public class loginAproved extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, totalPanelLayout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(11, 11, 11)))
-                .addGap(18, 18, 18)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -394,7 +425,7 @@ public class loginAproved extends javax.swing.JFrame {
         TabelPrincipal.setLayout(TabelPrincipalLayout);
         TabelPrincipalLayout.setHorizontalGroup(
             TabelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 553, Short.MAX_VALUE)
         );
         TabelPrincipalLayout.setVerticalGroup(
             TabelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1268,6 +1299,271 @@ public class loginAproved extends javax.swing.JFrame {
 
         mainWindow.add(bazar, "card3");
 
+        mancareGatita.setLayout(new java.awt.GridLayout(6, 6, 10, 10));
+
+        jButton126.setVerticalTextPosition(SwingConstants.TOP);
+        jButton126.setHorizontalTextPosition(SwingConstants.LEFT);
+        jButton126.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jButton126.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton126.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton126.setInheritsPopupMenu(true);
+        jButton126.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton126ActionPerformed(evt);
+            }
+        });
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+            Statement st =  conn.createStatement();
+            ResultSet rs = st.executeQuery("select NUME from PRODUSE where cod  = 29854");
+            if(rs.next())
+
+            numeProdus = rs.getString(1);
+
+            rs = st.executeQuery("select Pret from PRODUSE where cod  = 29854");
+            if(rs.next())
+            pretProdus = rs.getString(1);
+            jButton126.setText(numeProdus + " - " + pretProdus);
+            jButton126.setToolTipText(numeProdus + " - " + pretProdus);
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        mancareGatita.add(jButton126);
+
+        jButton127.setVerticalTextPosition(SwingConstants.TOP);
+        jButton127.setHorizontalTextPosition(SwingConstants.LEFT);
+        jButton127.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jButton127.setToolTipText("");
+        jButton127.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton127.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton127.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton127.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton127ActionPerformed(evt);
+            }
+        });
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+            Statement st =  conn.createStatement();
+            ResultSet rs = st.executeQuery("select NUME from PRODUSE where cod  = 29853");
+            if(rs.next())
+
+            numeProdus = rs.getString(1);
+
+            rs = st.executeQuery("select Pret from PRODUSE where cod  = 29853");
+            if(rs.next())
+            pretProdus = rs.getString(1);
+            jButton127.setText(numeProdus + " - " + pretProdus);
+            jButton127.setToolTipText(numeProdus + " - " + pretProdus);
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        mancareGatita.add(jButton127);
+
+        jButton128.setVerticalTextPosition(SwingConstants.TOP);
+        jButton128.setHorizontalTextPosition(SwingConstants.LEFT);
+        jButton128.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jButton128.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton128.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton128.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton128ActionPerformed(evt);
+            }
+        });
+        mancareGatita.add(jButton128);
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+            Statement st =  conn.createStatement();
+            ResultSet rs = st.executeQuery("select NUME from PRODUSE where cod  = 29849");
+
+            if(rs.next())
+            numeProdus = rs.getString(1);
+
+            rs = st.executeQuery("select Pret from PRODUSE where cod  = 29849");
+            if(rs.next())
+            pretProdus = rs.getString(1);
+            jButton128.setText(numeProdus + " - " + pretProdus);
+            jButton128.setToolTipText(numeProdus + " - " + pretProdus);
+
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        jButton129.setVerticalTextPosition(SwingConstants.TOP);
+        jButton129.setHorizontalTextPosition(SwingConstants.LEFT);
+        jButton129.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jButton129.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton129.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton129.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton129ActionPerformed(evt);
+            }
+        });
+        mancareGatita.add(jButton129);
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+            Statement st =  conn.createStatement();
+            ResultSet rs = st.executeQuery("select NUME from PRODUSE where cod  = 29848");
+
+            if(rs.next())
+            numeProdus = rs.getString(1);
+
+            rs = st.executeQuery("select Pret from PRODUSE where cod  = 29848");
+            if(rs.next())
+            pretProdus = rs.getString(1);
+            jButton129.setText(numeProdus + " - " + pretProdus);
+            jButton129.setToolTipText(numeProdus + " - " + pretProdus);
+
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        jButton130.setVerticalTextPosition(SwingConstants.TOP);
+        jButton130.setHorizontalTextPosition(SwingConstants.LEFT);
+        jButton130.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jButton130.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton130.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton130.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton130ActionPerformed(evt);
+            }
+        });
+        mancareGatita.add(jButton130);
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+            Statement st =  conn.createStatement();
+            ResultSet rs = st.executeQuery("select NUME from PRODUSE where cod  = 29851");
+
+            if(rs.next())
+            numeProdus = rs.getString(1);
+
+            rs = st.executeQuery("select Pret from PRODUSE where cod  = 29851");
+            if(rs.next())
+            pretProdus = rs.getString(1);
+            jButton130.setText(numeProdus + " - " + pretProdus);
+            jButton130.setToolTipText(numeProdus + " - " + pretProdus);
+
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        jButton131.setVerticalTextPosition(SwingConstants.TOP);
+        jButton131.setHorizontalTextPosition(SwingConstants.LEFT);
+        jButton131.setFont(new java.awt.Font("Tahoma", 1, 10));
+        jButton131.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton131.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton131.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton131.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton131ActionPerformed(evt);
+            }
+        });
+        mancareGatita.add(jButton131);
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+            Statement st =  conn.createStatement();
+            ResultSet rs = st.executeQuery("select NUME from PRODUSE where cod  = 29852");
+
+            if(rs.next())
+            numeProdus = rs.getString(1);
+
+            rs = st.executeQuery("select Pret from PRODUSE where cod  = 29852");
+            if(rs.next())
+            pretProdus = rs.getString(1);
+            jButton131.setText(numeProdus + " - " + pretProdus);
+            jButton131.setToolTipText(numeProdus + " - " + pretProdus);
+
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        jButton132.setVerticalTextPosition(SwingConstants.TOP);
+        jButton132.setHorizontalTextPosition(SwingConstants.LEFT);
+        jButton132.setFont(new java.awt.Font("Tahoma", 1, 10));
+        jButton132.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton132.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton132.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton132ActionPerformed(evt);
+            }
+        });
+        mancareGatita.add(jButton132);
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/magazinDB; create = true ", "robert", "test");
+            Statement st =  conn.createStatement();
+            ResultSet rs = st.executeQuery("select NUME from PRODUSE where cod  = 29850");
+
+            if(rs.next())
+            numeProdus = rs.getString(1);
+
+            rs = st.executeQuery("select Pret from PRODUSE where cod  = 29850");
+            if(rs.next())
+            pretProdus = rs.getString(1);
+            jButton132.setText(numeProdus + " - " + pretProdus);
+            jButton132.setToolTipText(numeProdus + " - " + pretProdus);
+
+        } catch (SQLException ex) {
+            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        jButton133.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton133);
+
+        jButton134.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton134);
+
+        jButton135.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton135);
+
+        jButton136.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton136);
+
+        jButton137.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton137.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton137ActionPerformed(evt);
+            }
+        });
+        mancareGatita.add(jButton137);
+
+        jButton138.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton138);
+
+        jButton139.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton139);
+
+        jButton140.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton140);
+
+        jButton141.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton141);
+
+        jButton142.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton142);
+
+        jButton143.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton143);
+
+        jButton144.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton144);
+
+        jButton145.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton145);
+
+        jButton146.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton146);
+
+        jButton147.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton147);
+
+        jButton148.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton148);
+
+        jButton149.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mancareGatita.add(jButton149);
+
+        mainWindow.add(mancareGatita, "card3");
+
         optionsWindow.setLayout(new java.awt.CardLayout());
 
         optiuniPrincipal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1296,8 +1592,13 @@ public class loginAproved extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setText("jButton4");
+        jButton4.setText("Mancare Gatita");
         jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton54.setText("SUPERVIZOR");
         jButton54.addActionListener(new java.awt.event.ActionListener() {
@@ -1319,9 +1620,9 @@ public class loginAproved extends javax.swing.JFrame {
         optiuniPrincipalLayout.setHorizontalGroup(
             optiuniPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(optiuniPrincipalLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
                 .addGroup(optiuniPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, optiuniPrincipalLayout.createSequentialGroup()
+                    .addGroup(optiuniPrincipalLayout.createSequentialGroup()
+                        .addGap(27, 27, 27)
                         .addGroup(optiuniPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, optiuniPrincipalLayout.createSequentialGroup()
                                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1332,11 +1633,11 @@ public class loginAproved extends javax.swing.JFrame {
                                     .addComponent(jButton59, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(27, 27, 27))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, optiuniPrincipalLayout.createSequentialGroup()
-                        .addComponent(jButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(66, 66, 66))))
+                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(optiuniPrincipalLayout.createSequentialGroup()
+                        .addGap(76, 76, 76)
+                        .addComponent(jButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         optiuniPrincipalLayout.setVerticalGroup(
             optiuniPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1483,7 +1784,7 @@ public class loginAproved extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(supervizorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton57, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton56, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
+                    .addComponent(jButton56, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
                     .addComponent(jButton55, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton58, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -1601,7 +1902,7 @@ public class loginAproved extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, plataCardLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(jButton90, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addGroup(plataCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton92, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton91))
@@ -1813,19 +2114,11 @@ public class loginAproved extends javax.swing.JFrame {
             }
         });
 
-        jButton74.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        jButton74.setText("DEL");
+        jButton74.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jButton74.setText("STERGE");
         jButton74.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton74ActionPerformed(evt);
-            }
-        });
-
-        jButton75.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        jButton75.setText(".");
-        jButton75.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton75ActionPerformed(evt);
             }
         });
 
@@ -1845,14 +2138,9 @@ public class loginAproved extends javax.swing.JFrame {
                 .addGroup(tastaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jButton66, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
                     .addComponent(jButton64, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton70, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton75, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton70, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 0, 0)
                 .addGroup(tastaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(tastaturaLayout.createSequentialGroup()
-                        .addComponent(jButton73, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(jButton74))
                     .addGroup(tastaturaLayout.createSequentialGroup()
                         .addComponent(jButton65, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
@@ -1865,10 +2153,13 @@ public class loginAproved extends javax.swing.JFrame {
                         .addGroup(tastaturaLayout.createSequentialGroup()
                             .addComponent(jButton67, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(0, 0, 0)
-                            .addComponent(jButton69, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton76, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18))
+                            .addComponent(jButton69, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jButton73, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(tastaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton76, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton74, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         tastaturaLayout.setVerticalGroup(
             tastaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1888,15 +2179,14 @@ public class loginAproved extends javax.swing.JFrame {
                     .addComponent(jButton71, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton72, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, 0)
-                .addGroup(tastaturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton73, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton74, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton75, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jButton73, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(tastaturaLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jButton76, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(6, 6, 6)
+                .addComponent(jButton76, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton74, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         tastaturi.add(tastatura, "card5");
@@ -1950,7 +2240,8 @@ public class loginAproved extends javax.swing.JFrame {
         bauturi.setVisible(false);
         optiuniSubMeniu.setVisible(false);
         bazar.setVisible(false);
-        
+        mancareGatita.setVisible(false);
+
         TabelPrincipal.setVisible(true);
         optiuniPrincipal.setVisible(true);
     }//GEN-LAST:event_jButton25ActionPerformed
@@ -1978,10 +2269,6 @@ public class loginAproved extends javax.swing.JFrame {
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         adaugaProdusInTabel(25477);
     }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         adaugaProdusInTabel(23319);
@@ -2171,10 +2458,6 @@ public class loginAproved extends javax.swing.JFrame {
             jTextField1.setText(jTextField1.getText().substring(0, jTextField1.getText().length() - 1));
     }//GEN-LAST:event_jButton74ActionPerformed
 
-    private void jButton75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton75ActionPerformed
-
-    }//GEN-LAST:event_jButton75ActionPerformed
-
     private void jButton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton76ActionPerformed
         // ENTER
         if (!jTextField1.getText().equals("")) {
@@ -2199,8 +2482,6 @@ public class loginAproved extends javax.swing.JFrame {
     private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
         // tichete de masa
         new ticheteDeMasa().setVisible(true);
-
-
     }//GEN-LAST:event_jButton61ActionPerformed
 
     private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
@@ -2214,7 +2495,7 @@ public class loginAproved extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton92ActionPerformed
 
     private void jButton95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton95ActionPerformed
-        if (!String.valueOf(jButton95.getText()).equals(null)) {
+        if (!String.valueOf(jButton95.getText()).equals("")) {
             double aux = 0;
             sumaDePeButon = String.valueOf(jButton95.getText());
             sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
@@ -2229,7 +2510,7 @@ public class loginAproved extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton95ActionPerformed
 
     private void jButton93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton93ActionPerformed
-        if (!String.valueOf(jButton93.getText()).equals(null)) {
+        if (!String.valueOf(jButton93.getText()).equals("")) {
             double aux = 0;
             sumaDePeButon = String.valueOf(jButton93.getText());
             sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
@@ -2241,14 +2522,12 @@ public class loginAproved extends javax.swing.JFrame {
             plataCash.setVisible(false);
             plata.setVisible(false);
             optiuniPrincipal.setVisible(true);
-            plataCash.setVisible(false);
-            plata.setVisible(false);
-            optiuniPrincipal.setVisible(true);
+            
         }
     }//GEN-LAST:event_jButton93ActionPerformed
 
     private void jButton96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton96ActionPerformed
-        if (!String.valueOf(jButton96.getText()).equals(null)) {
+        if (!String.valueOf(jButton96.getText()).equals("")) {
             double aux = 0;
             sumaDePeButon = String.valueOf(jButton96.getText());
             sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
@@ -2263,7 +2542,7 @@ public class loginAproved extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton96ActionPerformed
 
     private void jButton97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton97ActionPerformed
-        if (!String.valueOf(jButton97.getText()).equals(null)) {
+        if (!String.valueOf(jButton97.getText()).equals("")) {
             double aux = 0;
             sumaDePeButon = String.valueOf(jButton97.getText());
             sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
@@ -2278,7 +2557,7 @@ public class loginAproved extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton97ActionPerformed
 
     private void jButton98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton98ActionPerformed
-        if (!String.valueOf(jButton98.getText()).equals(null)) {
+        if (!String.valueOf(jButton98.getText()).equals("")) {
             double aux = 0;
             sumaDePeButon = String.valueOf(jButton98.getText());
             sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
@@ -2293,7 +2572,7 @@ public class loginAproved extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton98ActionPerformed
 
     private void jButton99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton99ActionPerformed
-        if (!String.valueOf(jButton99.getText()).equals(null)) {
+        if (!String.valueOf(jButton99.getText()).equals("")) {
             double aux = 0;
             sumaDePeButon = String.valueOf(jButton99.getText());
             sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
@@ -2329,6 +2608,11 @@ public class loginAproved extends javax.swing.JFrame {
             jButton98.setText("200 Lei");
             jButton99.setText("500 Lei");
             jButton100.setText("Alta suma");
+            //verifica daca primele 2 butoane au aceleasi valori
+            if (jButton93.getText().equals(jButton94.getText())) {
+                jButton93.setText("");
+                jButton94.setText(aux + " Lei");
+            }
         } else if (Double.parseDouble(jLabel1.getText()) < 5.01) {
             aux = ((int) Math.ceil(Double.parseDouble(jLabel1.getText())));
             jButton93.setText(aux + " Lei");
@@ -2339,6 +2623,11 @@ public class loginAproved extends javax.swing.JFrame {
             jButton98.setText("200 Lei");
             jButton99.setText("500 Lei");
             jButton100.setText("Alta suma");
+            //verifica daca primele 2 butoane au aceleasi valori
+            if (jButton93.getText().equals(jButton94.getText())) {
+                jButton93.setText("");
+                jButton94.setText(aux + " Lei");
+            }
         } else if (Double.parseDouble(jLabel1.getText()) < 10.01) {
             aux = ((int) Math.ceil(Double.parseDouble(jLabel1.getText())));
             jButton93.setText(aux + " Lei");
@@ -2349,6 +2638,11 @@ public class loginAproved extends javax.swing.JFrame {
             jButton98.setText("500 Lei");
             jButton99.setText("");
             jButton100.setText("Alta suma");
+            //verifica daca primele 2 butoane au aceleasi valori
+            if (jButton93.getText().equals(jButton94.getText())) {
+                jButton93.setText("");
+                jButton94.setText(aux + " Lei");
+            }
         } // 10 < X < 50 //
         else if (Double.parseDouble(jLabel1.getText()) < 50.01) {
             aux = ((int) Math.ceil(Double.parseDouble(jLabel1.getText())));
@@ -2362,6 +2656,11 @@ public class loginAproved extends javax.swing.JFrame {
                 jButton98.setText("200 Lei");
                 jButton99.setText("500 Lei");
                 jButton100.setText("Alta suma");
+                //verifica daca primele 2 butoane au aceleasi valori
+                if (jButton93.getText().equals(jButton94.getText())) {
+                    jButton93.setText("");
+                    jButton94.setText(aux + " Lei");
+                }
             } else {
                 jButton94.setText(Math.round(Double.parseDouble(jLabel1.getText())) + (Math.abs(10 - (Math.round(Double.parseDouble(jLabel1.getText()))) % 10)) + " Lei");
                 jButton95.setText("50 Lei");
@@ -2370,6 +2669,11 @@ public class loginAproved extends javax.swing.JFrame {
                 jButton98.setText("500 Lei");
                 jButton99.setText("");
                 jButton100.setText("Alta suma");
+                //verifica daca primele 2 butoane au aceleasi valori
+                if (jButton93.getText().equals(jButton94.getText())) {
+                    jButton93.setText("");
+                    jButton94.setText(aux + " Lei");
+                }
             }
 
             // 50 < X < 100//
@@ -2385,6 +2689,11 @@ public class loginAproved extends javax.swing.JFrame {
                 jButton98.setText("500 Lei");
                 jButton99.setText("");
                 jButton100.setText("Alta suma");
+                //verifica daca primele 2 butoane au aceleasi valori
+                if (jButton93.getText().equals(jButton94.getText())) {
+                    jButton93.setText("");
+                    jButton94.setText(aux + " Lei");
+                }
             } else {
                 jButton94.setText(Math.round(Double.parseDouble(jLabel1.getText())) + (Math.abs(10 - (Math.round(Double.parseDouble(jLabel1.getText()))) % 10)) + " Lei");
                 jButton95.setText("100 Lei");
@@ -2393,6 +2702,11 @@ public class loginAproved extends javax.swing.JFrame {
                 jButton98.setText("");
                 jButton99.setText("");
                 jButton100.setText("Alta suma");
+                //verifica daca primele 2 butoane au aceleasi valori
+                if (jButton93.getText().equals(jButton94.getText())) {
+                    jButton93.setText("");
+                    jButton94.setText(aux + " Lei");
+                }
             }
 
             // 100 < X < 200// 
@@ -2407,6 +2721,11 @@ public class loginAproved extends javax.swing.JFrame {
                 jButton98.setText("");
                 jButton99.setText("");
                 jButton100.setText("Alta suma");
+                //verifica daca primele 2 butoane au aceleasi valori
+                if (jButton93.getText().equals(jButton94.getText())) {
+                    jButton93.setText("");
+                    jButton94.setText(aux + " Lei");
+                }
             } else {
                 jButton94.setText(Math.round(Double.parseDouble(jLabel1.getText())) + (Math.abs(10 - (Math.round(Double.parseDouble(jLabel1.getText()))) % 10)) + " Lei");
                 jButton95.setText("200 Lei");
@@ -2415,6 +2734,11 @@ public class loginAproved extends javax.swing.JFrame {
                 jButton98.setText("");
                 jButton99.setText("");
                 jButton100.setText("Alta suma");
+                //verifica daca primele 2 butoane au aceleasi valori
+                if (jButton93.getText().equals(jButton94.getText())) {
+                    jButton93.setText("");
+                    jButton94.setText(aux + " Lei");
+                }
             }
 
             // 200 < X < 500//
@@ -2430,6 +2754,11 @@ public class loginAproved extends javax.swing.JFrame {
                 jButton98.setText("");
                 jButton99.setText("");
                 jButton100.setText("Alta suma");
+                //verifica daca primele 2 butoane au aceleasi valori
+                if (jButton93.getText().equals(jButton94.getText())) {
+                    jButton93.setText("");
+                    jButton94.setText(aux + " Lei");
+                }
             } else {
                 jButton94.setText(Math.round(Double.parseDouble(jLabel1.getText())) + (Math.abs(10 - (Math.round(Double.parseDouble(jLabel1.getText()))) % 10)) + " Lei");
                 jButton95.setText("500 Lei");
@@ -2438,6 +2767,11 @@ public class loginAproved extends javax.swing.JFrame {
                 jButton98.setText("");
                 jButton99.setText("");
                 jButton100.setText("Alta suma");
+                //verifica daca primele 2 butoane au aceleasi valori
+                if (jButton93.getText().equals(jButton94.getText())) {
+                    jButton93.setText("");
+                    jButton94.setText(aux + " Lei");
+                }
             }
 
             //  X > 500.00
@@ -2452,6 +2786,11 @@ public class loginAproved extends javax.swing.JFrame {
                 jButton98.setText("");
                 jButton99.setText("");
                 jButton100.setText("Alta suma");
+                //verifica daca primele 2 butoane au aceleasi valori
+                if (jButton93.getText().equals(jButton94.getText())) {
+                    jButton93.setText("");
+                    jButton94.setText(aux + " Lei");
+                }
             } else {
                 jButton94.setText(Math.round(Double.parseDouble(jLabel1.getText())) + (Math.abs(10 - (Math.round(Double.parseDouble(jLabel1.getText()))) % 10)) + " Lei");
                 jButton95.setText("");
@@ -2460,6 +2799,11 @@ public class loginAproved extends javax.swing.JFrame {
                 jButton98.setText("");
                 jButton99.setText("");
                 jButton100.setText("Alta suma");
+                //verifica daca primele 2 butoane au aceleasi valori
+                if (jButton93.getText().equals(jButton94.getText())) {
+                    jButton93.setText("");
+                    jButton94.setText(aux + " Lei");
+                }
             }
 
         }
@@ -2470,7 +2814,7 @@ public class loginAproved extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton62ActionPerformed
 
     private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
-        if (!String.valueOf(jButton94.getText()).equals(null)) {
+        if (!String.valueOf(jButton94.getText()).equals("")) {
             double aux = 0;
             sumaDePeButon = String.valueOf(jButton94.getText());
             sumaDePeButon = sumaDePeButon.replaceAll("\\D+", "");//Sterge toate caracterele care nu sunt numere
@@ -2519,28 +2863,73 @@ public class loginAproved extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton102ActionPerformed
-    adaugaProdusInTabel(12533);
+        adaugaProdusInTabel(12533);
     }//GEN-LAST:event_jButton102ActionPerformed
 
     private void jButton103ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton103ActionPerformed
-    adaugaProdusInTabel(12534);
+        adaugaProdusInTabel(12534);
     }//GEN-LAST:event_jButton103ActionPerformed
 
     private void jButton104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton104ActionPerformed
-    adaugaProdusInTabel(12535);
+        adaugaProdusInTabel(12535);
     }//GEN-LAST:event_jButton104ActionPerformed
 
     private void jButton105ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton105ActionPerformed
-    adaugaProdusInTabel(12536);
+        adaugaProdusInTabel(12536);
     }//GEN-LAST:event_jButton105ActionPerformed
 
     private void jButton106ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton106ActionPerformed
-    adaugaProdusInTabel(12537);
+        adaugaProdusInTabel(12537);
     }//GEN-LAST:event_jButton106ActionPerformed
 
     private void jButton113ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton113ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton113ActionPerformed
+
+    private void jButton126ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton126ActionPerformed
+        adaugaProdusInTabel(29854);
+    }//GEN-LAST:event_jButton126ActionPerformed
+
+    private void jButton127ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton127ActionPerformed
+        adaugaProdusInTabel(29853);
+    }//GEN-LAST:event_jButton127ActionPerformed
+
+    private void jButton128ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton128ActionPerformed
+        adaugaProdusInTabel(29849);
+    }//GEN-LAST:event_jButton128ActionPerformed
+
+    private void jButton129ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton129ActionPerformed
+        adaugaProdusInTabel(29848);
+    }//GEN-LAST:event_jButton129ActionPerformed
+
+    private void jButton130ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton130ActionPerformed
+        adaugaProdusInTabel(29851);
+    }//GEN-LAST:event_jButton130ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+
+        mancareGatita.setVisible(true);
+        optiuniSubMeniu.setVisible(true);
+        TabelPrincipal.setVisible(false);
+        optiuniPrincipal.setVisible(false);
+
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton131ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton131ActionPerformed
+        adaugaProdusInTabel(29852);
+    }//GEN-LAST:event_jButton131ActionPerformed
+
+    private void jButton132ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton132ActionPerformed
+        adaugaProdusInTabel(29850);
+    }//GEN-LAST:event_jButton132ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton137ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton137ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton137ActionPerformed
 
     //apasarea butonului de placa cu tichete
     public static void actualizeazaTotalTichete(double totalPlatitTichete, double valoare, int nr) {
@@ -2783,7 +3172,7 @@ public class loginAproved extends javax.swing.JFrame {
         bauturi.setVisible(false);
         bazar.setVisible(false);
         optiuniSubMeniu.setVisible(false);
-        
+        mancareGatita.setVisible(false);
 
         calculeazaTotal();
     }
@@ -3000,8 +3389,32 @@ public class loginAproved extends javax.swing.JFrame {
     private javax.swing.JButton jButton123;
     private javax.swing.JButton jButton124;
     private javax.swing.JButton jButton125;
+    private javax.swing.JButton jButton126;
+    private javax.swing.JButton jButton127;
+    private javax.swing.JButton jButton128;
+    private javax.swing.JButton jButton129;
     private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton130;
+    private javax.swing.JButton jButton131;
+    private javax.swing.JButton jButton132;
+    private javax.swing.JButton jButton133;
+    private javax.swing.JButton jButton134;
+    private javax.swing.JButton jButton135;
+    private javax.swing.JButton jButton136;
+    private javax.swing.JButton jButton137;
+    private javax.swing.JButton jButton138;
+    private javax.swing.JButton jButton139;
     private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton140;
+    private javax.swing.JButton jButton141;
+    private javax.swing.JButton jButton142;
+    private javax.swing.JButton jButton143;
+    private javax.swing.JButton jButton144;
+    private javax.swing.JButton jButton145;
+    private javax.swing.JButton jButton146;
+    private javax.swing.JButton jButton147;
+    private javax.swing.JButton jButton148;
+    private javax.swing.JButton jButton149;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
@@ -3068,7 +3481,6 @@ public class loginAproved extends javax.swing.JFrame {
     private javax.swing.JButton jButton72;
     private javax.swing.JButton jButton73;
     private javax.swing.JButton jButton74;
-    private javax.swing.JButton jButton75;
     private javax.swing.JButton jButton76;
     private javax.swing.JButton jButton77;
     private javax.swing.JButton jButton78;
@@ -3101,6 +3513,7 @@ public class loginAproved extends javax.swing.JFrame {
     public static javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     public javax.swing.JLayeredPane mainWindow;
+    private javax.swing.JPanel mancareGatita;
     public javax.swing.JLayeredPane optionsWindow;
     public static javax.swing.JPanel optiuniPrincipal;
     private javax.swing.JPanel optiuniSubMeniu;
