@@ -23,10 +23,6 @@ public class ticheteDeMasa extends javax.swing.JFrame  {
     public ticheteDeMasa() {
         initComponents();
         
-        
-//        jTextField2.setVisible(false);
-//        jLabel2.setVisible(false);
-        
     }
 
     /**
@@ -71,11 +67,6 @@ public class ticheteDeMasa extends javax.swing.JFrame  {
         jFormattedTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jFormattedTextField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jFormattedTextField1.setSelectionEnd(aux);
-        jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField1ActionPerformed(evt);
-            }
-        });
         jFormattedTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 jFormattedTextField1KeyTyped(evt);
@@ -87,6 +78,11 @@ public class ticheteDeMasa extends javax.swing.JFrame  {
         jTextField1.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 jTextField1CaretUpdate(evt);
+            }
+        });
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextField1KeyTyped(evt);
             }
         });
 
@@ -154,10 +150,6 @@ public class ticheteDeMasa extends javax.swing.JFrame  {
        
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
-        
-    }//GEN-LAST:event_jFormattedTextField1ActionPerformed
-
     private void jFormattedTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextField1KeyTyped
      char c =  evt.getKeyChar();
            if(Character.isLetter(c) && !evt.isAltDown())
@@ -165,9 +157,18 @@ public class ticheteDeMasa extends javax.swing.JFrame  {
     }//GEN-LAST:event_jFormattedTextField1KeyTyped
 
     private void jTextField1CaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_jTextField1CaretUpdate
+       try{
         jFormattedTextField1.setText("" + (int)(loginAproved.sum / Double.parseDouble(jTextField1.getText())));
         aux = Integer.parseInt(jFormattedTextField1.getText());
+     }catch(NumberFormatException e){   
+    }
     }//GEN-LAST:event_jTextField1CaretUpdate
+
+    private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
+        char c =  evt.getKeyChar();
+           if(Character.isLetter(c) && !evt.isAltDown())
+            evt.consume();
+    }//GEN-LAST:event_jTextField1KeyTyped
 
     /**
      * @param args the command line arguments
