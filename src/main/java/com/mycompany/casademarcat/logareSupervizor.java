@@ -150,21 +150,37 @@ public class logareSupervizor extends javax.swing.JFrame{
            {
                if(rs.getString(2).equals(jTextField1.getText()) && rs.getString(3).equals(String.valueOf(jPasswordField1.getPassword())) && rs.getBoolean("SUPERVIZOR") == true){
                    flag = 0;
+<<<<<<< Updated upstream
+=======
+                  rs.close();
+                  st.close();
+                  conn.close();
+>>>>>>> Stashed changes
                    break;
                }
            }
            if(flag == 0){
            loginAproved.optiuniPrincipal.setVisible(false);
            loginAproved.supervizor.setVisible(true);
+<<<<<<< Updated upstream
            rs.close();
            st.close();
            conn.close();
            dispose();
            
+=======
+            rs.close();
+            st.close();
+            conn.close();
+            dispose();          
+>>>>>>> Stashed changes
            }
            else{
                 JOptionPane.showMessageDialog(null,"Utilizatorul nu exista sau acesta nu este supervizor!",
             "Error", JOptionPane.ERROR_MESSAGE);
+                 rs.close();
+                 st.close();
+                 conn.close();
            }
            rs.close();
            st.close();

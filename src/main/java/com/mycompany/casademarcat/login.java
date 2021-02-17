@@ -153,6 +153,9 @@ public class login extends javax.swing.JFrame {
            }
            if(flag == 0){
             new loginAproved().setVisible(true);
+            rs.close();
+            st.close();
+            conn.close();
             dispose();
              
            }

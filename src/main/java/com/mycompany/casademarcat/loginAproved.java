@@ -3191,11 +3191,18 @@ public class loginAproved extends javax.swing.JFrame {
                     pstmt.setString(7, login.loggedUser);
                     pstmt.setTimestamp(8, timestamp);
                     pstmt.setDouble(9, (rest * -1));
+<<<<<<< Updated upstream
                     pstmt.executeUpdate();
                        
                 }
                 pstmt.close();
                 conn.close();
+=======
+                    pstmt.executeUpdate();  
+                }
+                   pstmt.close();
+                   conn.close();
+>>>>>>> Stashed changes
             } catch (SQLException ex) {
 
                 Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
@@ -3223,8 +3230,13 @@ public class loginAproved extends javax.swing.JFrame {
                     pstmt.executeUpdate();
                     
                 }
+<<<<<<< Updated upstream
                  pstmt.close();
                  conn.close();
+=======
+                    pstmt.close();
+                    conn.close();
+>>>>>>> Stashed changes
             } catch (SQLException ex) {
                 Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -3249,10 +3261,15 @@ public class loginAproved extends javax.swing.JFrame {
                     pstmt.setDouble(9, (rest * -1));
                     pstmt.setString(10, (jTable1.getValueAt(contorTabelLinii - 3, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 3, 3)).toString());
                     pstmt.setString(11, (jTable1.getValueAt(contorTabelLinii - 2, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 2, 3)).toString());
+<<<<<<< Updated upstream
                     pstmt.executeUpdate();
 
                 }
                                     
+=======
+                    pstmt.executeUpdate();                     
+                }
+>>>>>>> Stashed changes
                     pstmt.close();
                     conn.close();
             } catch (SQLException ex) {

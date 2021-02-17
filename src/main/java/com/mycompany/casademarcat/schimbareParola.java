@@ -62,12 +62,6 @@ public class schimbareParola extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel4.setText("Reintrodu parola noua");
 
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
-            }
-        });
-
         jButton1.setText("Ok");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,7 +154,11 @@ public class schimbareParola extends javax.swing.JFrame {
                 if(String.valueOf(jPasswordField2.getPassword()).equals(String.valueOf(jPasswordField3.getPassword()))){
                         st.execute("UPDATE CONTURI SET PAROLA = '"+ String.valueOf(jPasswordField3.getPassword())+ "' WHERE NUMECONT like '" + login.loggedUser +"' and PAROLA like '" + login.loggedPass + "'" );  
                         JOptionPane.showMessageDialog(null, "Parola lui " + loggedUser + " a fost actualizata.");  
+<<<<<<< Updated upstream
                         login.loggedPass = String.valueOf(jPasswordField3.getPassword());          
+=======
+                        login.loggedPass = String.valueOf(jPasswordField3.getPassword());
+>>>>>>> Stashed changes
                         st.close();
                         conn.close();
                         dispose();
@@ -173,9 +171,15 @@ public class schimbareParola extends javax.swing.JFrame {
             }else{
                    JOptionPane.showMessageDialog(null, "Parola veche nu este corecta!");  
                    jPasswordField1.setText(""); 
+<<<<<<< Updated upstream
                    }   
            st.close();
            conn.close();
+=======
+                   }
+            st.close();
+            conn.close();
+>>>>>>> Stashed changes
         }   
          catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
@@ -185,10 +189,6 @@ public class schimbareParola extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     /**
      * @param args the command line arguments
