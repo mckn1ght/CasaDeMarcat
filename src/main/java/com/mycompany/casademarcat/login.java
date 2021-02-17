@@ -30,7 +30,6 @@ public class login extends javax.swing.JFrame {
     public login() {
         
         initComponents();
-        getConnection();
       }
 
     /**
@@ -54,11 +53,6 @@ public class login extends javax.swing.JFrame {
         setTitle("Logare Casier");
 
         jTextField1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jButton1.setText("Login");
@@ -151,6 +145,9 @@ public class login extends javax.swing.JFrame {
                    flag = 0;
                    loggedUser = jTextField1.getText();
                    loggedPass = String.valueOf(jPasswordField1.getPassword());
+                   rs.close();
+                   st.close();
+                   conn.close();
                    break;
                }
            }
@@ -162,6 +159,9 @@ public class login extends javax.swing.JFrame {
            else{
                 JOptionPane.showMessageDialog(null,"Nume utilizator sau parola gresite",
             "Error", JOptionPane.ERROR_MESSAGE);
+                rs.close();
+                st.close();
+                conn.close();
            }
                
         } catch (SQLException ex) {
@@ -172,10 +172,6 @@ public class login extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
     System.exit(0);
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -211,18 +207,6 @@ public class login extends javax.swing.JFrame {
                 new login().setVisible(true);
             }
         });
-    }
-    public static Connection getConnection(){
-     
-        Connection con = null;
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:derby://localhost:1527/CasaDeMarcat", "CONTURI", "");
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-        
-        return con;
     }
     
    

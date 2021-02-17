@@ -160,7 +160,9 @@ public class schimbareParola extends javax.swing.JFrame {
                 if(String.valueOf(jPasswordField2.getPassword()).equals(String.valueOf(jPasswordField3.getPassword()))){
                         st.execute("UPDATE CONTURI SET PAROLA = '"+ String.valueOf(jPasswordField3.getPassword())+ "' WHERE NUMECONT like '" + login.loggedUser +"' and PAROLA like '" + login.loggedPass + "'" );  
                         JOptionPane.showMessageDialog(null, "Parola lui " + loggedUser + " a fost actualizata.");  
-                        login.loggedPass = String.valueOf(jPasswordField3.getPassword());
+                        login.loggedPass = String.valueOf(jPasswordField3.getPassword());          
+                        st.close();
+                        conn.close();
                         dispose();
                       
                 }else{
@@ -171,7 +173,9 @@ public class schimbareParola extends javax.swing.JFrame {
             }else{
                    JOptionPane.showMessageDialog(null, "Parola veche nu este corecta!");  
                    jPasswordField1.setText(""); 
-                   }
+                   }   
+           st.close();
+           conn.close();
         }   
          catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
