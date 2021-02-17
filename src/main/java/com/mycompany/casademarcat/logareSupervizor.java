@@ -68,6 +68,12 @@ public class logareSupervizor extends javax.swing.JFrame{
             }
         });
 
+        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPasswordField1ActionPerformed(evt);
+            }
+        });
+
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel3.setText("Logare in modul Supervizor");
 
@@ -150,41 +156,20 @@ public class logareSupervizor extends javax.swing.JFrame{
            {
                if(rs.getString(2).equals(jTextField1.getText()) && rs.getString(3).equals(String.valueOf(jPasswordField1.getPassword())) && rs.getBoolean("SUPERVIZOR") == true){
                    flag = 0;
-<<<<<<< Updated upstream
-=======
-                  rs.close();
-                  st.close();
-                  conn.close();
->>>>>>> Stashed changes
+                  
                    break;
                }
            }
            if(flag == 0){
            loginAproved.optiuniPrincipal.setVisible(false);
            loginAproved.supervizor.setVisible(true);
-<<<<<<< Updated upstream
-           rs.close();
-           st.close();
-           conn.close();
            dispose();
            
-=======
-            rs.close();
-            st.close();
-            conn.close();
-            dispose();          
->>>>>>> Stashed changes
            }
            else{
                 JOptionPane.showMessageDialog(null,"Utilizatorul nu exista sau acesta nu este supervizor!",
             "Error", JOptionPane.ERROR_MESSAGE);
-                 rs.close();
-                 st.close();
-                 conn.close();
            }
-           rs.close();
-           st.close();
-           conn.close();
                
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
@@ -192,6 +177,10 @@ public class logareSupervizor extends javax.swing.JFrame{
           
                                     
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
      dispose();
