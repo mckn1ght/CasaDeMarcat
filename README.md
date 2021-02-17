@@ -16,7 +16,10 @@ MODIFICARI
  -0.80 Implementare functionalitate rest  
  -0.80 Butonul "TOTAL" din lista cu optiuni acum va sterge toate datele din tabel daca in acesta sunt doar produse sterse cu valoarea totala 0    
  -0.80 Tabelul principal este acum extins dinamic( linii inceput: 47 - pentru a oferi un aspect vizual placut)  
-
+ 
+ -0.82 Am inchis SQL statements, prepared statements, resultSets si connexiuni cu Baza de Date    
+ -0.82 Am eliminat mai multe functii goale generate automat  
+ 
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
@@ -35,5 +38,7 @@ CHANGES
  -0.80 The receipt is also saved in the database    
  -0.80 Implemented the "give change" functionality    
  -0.80 The "TOTAL" buton will now erase the table if there are only cancelled items and their total is 0    
- -0.80 Main table is now dinamically extended(At first there are only 47 lines just to make sure it's visually pleasing)    
-
+ -0.80 Main table is now dinamically extended(At first there are only 47 lines just to make sure it's visually pleasing) 
+ 
+ -0.82 Closed SQL statements, prepared statements, resultSets and connections that were left open with the DB  
+ -0.82 Removed several empty functions  
