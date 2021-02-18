@@ -68,12 +68,6 @@ public class logareSupervizor extends javax.swing.JFrame{
             }
         });
 
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
-            }
-        });
-
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel3.setText("Logare in modul Supervizor");
 
@@ -163,6 +157,9 @@ public class logareSupervizor extends javax.swing.JFrame{
            if(flag == 0){
            loginAproved.optiuniPrincipal.setVisible(false);
            loginAproved.supervizor.setVisible(true);
+            rs.close();
+            st.close();
+            conn.close();
            dispose();
            
            }
@@ -170,17 +167,15 @@ public class logareSupervizor extends javax.swing.JFrame{
                 JOptionPane.showMessageDialog(null,"Utilizatorul nu exista sau acesta nu este supervizor!",
             "Error", JOptionPane.ERROR_MESSAGE);
            }
-               
+            rs.close();
+            st.close();
+            conn.close();    
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
           
                                     
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
      dispose();

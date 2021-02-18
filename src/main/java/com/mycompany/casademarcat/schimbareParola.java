@@ -62,12 +62,6 @@ public class schimbareParola extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel4.setText("Reintrodu parola noua");
 
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
-            }
-        });
-
         jButton1.setText("Ok");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -161,6 +155,8 @@ public class schimbareParola extends javax.swing.JFrame {
                         st.execute("UPDATE CONTURI SET PAROLA = '"+ String.valueOf(jPasswordField3.getPassword())+ "' WHERE NUMECONT like '" + login.loggedUser +"' and PAROLA like '" + login.loggedPass + "'" );  
                         JOptionPane.showMessageDialog(null, "Parola lui " + loggedUser + " a fost actualizata.");  
                         login.loggedPass = String.valueOf(jPasswordField3.getPassword());
+                        st.close();
+                        conn.close();
                         dispose();
                       
                 }else{
@@ -172,6 +168,8 @@ public class schimbareParola extends javax.swing.JFrame {
                    JOptionPane.showMessageDialog(null, "Parola veche nu este corecta!");  
                    jPasswordField1.setText(""); 
                    }
+                 st.close();
+                 conn.close();
         }   
          catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
@@ -181,10 +179,6 @@ public class schimbareParola extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     /**
      * @param args the command line arguments

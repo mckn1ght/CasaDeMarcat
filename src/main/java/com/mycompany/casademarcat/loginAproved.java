@@ -7,7 +7,6 @@ package com.mycompany.casademarcat;
 
 import com.itextpdf.text.Paragraph;
 import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -460,6 +459,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton5.setText(numeProdus + " - " + pretProdus);
             jButton5.setToolTipText(numeProdus + " - " + pretProdus);
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -490,6 +492,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton6.setText(numeProdus + " - " + pretProdus);
             jButton6.setToolTipText(numeProdus + " - " + pretProdus);
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -519,7 +524,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton7.setText(numeProdus + " - " + pretProdus);
             jButton7.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -548,7 +555,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton8.setText(numeProdus + " - " + pretProdus);
             jButton8.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -576,7 +585,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton9.setText(numeProdus + " - " + pretProdus);
             jButton9.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -672,7 +683,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton26.setText(numeProdus + " - " + pretProdus);
             jButton26.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -701,7 +714,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton27.setText(numeProdus + " - " + pretProdus);
             jButton27.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -730,7 +745,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton28.setText(numeProdus + " - " + pretProdus);
             jButton28.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -759,7 +776,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton29.setText(numeProdus + " - " + pretProdus);
             jButton29.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -788,7 +807,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton30.setText(numeProdus + " - " + pretProdus);
             jButton30.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -817,7 +838,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton31.setText(numeProdus + " - " + pretProdus);
             jButton31.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -846,7 +869,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton32.setText(numeProdus + " - " + pretProdus);
             jButton32.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -875,7 +900,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton33.setText(numeProdus + " - " + pretProdus);
             jButton33.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -904,7 +931,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton34.setText(numeProdus + " - " + pretProdus);
             jButton34.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -933,7 +962,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton35.setText(numeProdus + " - " + pretProdus);
             jButton35.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -962,7 +993,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton36.setText(numeProdus + " - " + pretProdus);
             jButton36.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -991,7 +1024,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton37.setText(numeProdus + " - " + pretProdus);
             jButton37.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1020,7 +1055,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton38.setText(numeProdus + " - " + pretProdus);
             jButton38.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1049,7 +1086,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton39.setText(numeProdus + " - " + pretProdus);
             jButton39.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1113,6 +1152,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton102.setText(numeProdus + " - " + pretProdus);
             jButton102.setToolTipText(numeProdus + " - " + pretProdus);
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1143,6 +1185,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton103.setText(numeProdus + " - " + pretProdus);
             jButton103.setToolTipText(numeProdus + " - " + pretProdus);
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1172,7 +1217,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton104.setText(numeProdus + " - " + pretProdus);
             jButton104.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1201,7 +1248,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton105.setText(numeProdus + " - " + pretProdus);
             jButton105.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1229,7 +1278,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton106.setText(numeProdus + " - " + pretProdus);
             jButton106.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1325,6 +1376,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton126.setText(numeProdus + " - " + pretProdus);
             jButton126.setToolTipText(numeProdus + " - " + pretProdus);
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1355,6 +1409,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton127.setText(numeProdus + " - " + pretProdus);
             jButton127.setToolTipText(numeProdus + " - " + pretProdus);
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1384,7 +1441,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton128.setText(numeProdus + " - " + pretProdus);
             jButton128.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1413,7 +1472,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton129.setText(numeProdus + " - " + pretProdus);
             jButton129.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1442,7 +1503,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton130.setText(numeProdus + " - " + pretProdus);
             jButton130.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1472,7 +1535,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton131.setText(numeProdus + " - " + pretProdus);
             jButton131.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1501,7 +1566,9 @@ public class loginAproved extends javax.swing.JFrame {
             pretProdus = rs.getString(1);
             jButton132.setText(numeProdus + " - " + pretProdus);
             jButton132.setToolTipText(numeProdus + " - " + pretProdus);
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2471,7 +2538,9 @@ public class loginAproved extends javax.swing.JFrame {
                 } else {
                     JOptionPane.showMessageDialog(null, "Codul de produs este incorect!", "Error", JOptionPane.ERROR_MESSAGE);
                 }
-
+               rs.close();
+               st.close();
+               conn.close();
             } catch (SQLException ex) {
                 Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -3070,6 +3139,8 @@ public class loginAproved extends javax.swing.JFrame {
                     pstmt.executeUpdate();
 
                 }
+                pstmt.close();
+                conn.close();
             } catch (SQLException ex) {
 
                 Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
@@ -3096,6 +3167,8 @@ public class loginAproved extends javax.swing.JFrame {
                     pstmt.setString(10, (jTable1.getValueAt(contorTabelLinii - 2, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 2, 3)).toString());
                     pstmt.executeUpdate();
                 }
+                pstmt.close();
+                conn.close();
             } catch (SQLException ex) {
                 Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -3122,6 +3195,8 @@ public class loginAproved extends javax.swing.JFrame {
                     pstmt.setString(11, (jTable1.getValueAt(contorTabelLinii - 2, 0)).toString() + (jTable1.getValueAt(contorTabelLinii - 2, 3)).toString());
                     pstmt.executeUpdate();
                 }
+                pstmt.close();
+                conn.close();               
             } catch (SQLException ex) {
                 Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -3158,7 +3233,9 @@ public class loginAproved extends javax.swing.JFrame {
                 jTable1.getModel().setValueAt((Double.parseDouble(String.valueOf(jTable1.getModel().getValueAt(contorTabelLinii, contorTabelColoane - 1))) * rs.getDouble(2)), contorTabelLinii, contorTabelColoane);
 
             }
-
+            rs.close();
+            st.close();
+            conn.close();
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
