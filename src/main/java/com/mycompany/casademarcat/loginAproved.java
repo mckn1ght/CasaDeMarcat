@@ -5,8 +5,6 @@
  */
 package com.mycompany.casademarcat;
 
-import com.itextpdf.text.Paragraph;
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,11 +14,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Timestamp;
 import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.Icon;
@@ -29,7 +24,6 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
 
-import javax.swing.text.Document;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
@@ -3060,7 +3054,7 @@ public class loginAproved extends javax.swing.JFrame {
             }
 
         }
-        jLabel1.setText(df2.format(sum));
+        jLabel1.setText(df2.format(sum).replace(',', '.'));
         //ADAUGA LINIE NOUA IN TABEL
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.insertRow(jTable1.getRowCount(), new Object[]{});
